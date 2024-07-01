@@ -1,13 +1,13 @@
-build*/
-doxy/html/
-doxy/latex/
-doxy-api/
-third-party/
-coverage/
-catch.xml
+mutable_fork_resultdb/build*/
+mutable_fork_resultdb/doxy/html/
+mutable_fork_resultdb/doxy/latex/
+mutable_fork_resultdb/doxy-api/
+mutable_fork_resultdb/third-party/
+mutable_fork_resultdb/coverage/
+mutable_fork_resultdb/catch.xml
 
 # Git version information
-include/mutable/gitversion.tbl
+mutable_fork_resultdb/include/mutable/gitversion.tbl
 
 # cmake export macros
-include/mutable/mutable-config.hpp
+mutable_fork_resultdb/include/mutable/mutable-config.hpp
