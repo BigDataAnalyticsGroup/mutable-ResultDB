@@ -1,0 +1,135 @@
+description: Join-Order Benchmark q7a.
+suite: result-db
+benchmark: job
+name: q7a
+readonly: true
+chart:
+    x:
+        scale: linear
+        type: O
+        label: JOB Queries
+    y:
+        scale: linear
+        type: Q
+        label: 'Execution time [ms]'
+    # Defaults: scale is "linear", type is "Q", label is "X" or "Y"
+data:
+    'aka_name':
+        file: 'benchmark/job/data/aka_name.csv'
+        format: 'csv'
+        delimiter: ','
+        header: 0
+        attributes:
+            'id': 'INT NOT NULL'
+            'person_id': 'INT NOT NULL'
+            'name': 'CHAR 16 NOT NULL'
+            'imdb_index': 'CHAR 3'
+            'name_pcode_cf': 'CHAR 5'
+            'name_pcode_nf': 'CHAR 5'
+            'surname_pcode': 'CHAR 5'
+            'md5sum': 'CHAR 32'
+    'cast_info':
+        file: 'benchmark/job/data/cast_info.csv'
+        format: 'csv'
+        delimiter: ','
+        header: 0
+        attributes:
+            'id': 'INT NOT NULL'
+            'person_id': 'INT NOT NULL'
+            'movie_id': 'INT NOT NULL'
+            'person_role_id': 'INT'
+            'note': 'CHAR 18'
+            'nr_order': 'INT'
+            'role_id': 'INT NOT NULL'
+    'info_type':
+        file: 'benchmark/job/data/info_type.csv'
+        format: 'csv'
+        delimiter: ','
+        header: 0
+        attributes:
+            'id': 'INT NOT NULL'
+            'info': 'CHAR 32 NOT NULL'
+    'link_type':
+        file: 'benchmark/job/data/link_type.csv'
+        format: 'csv'
+        delimiter: ','
+        header: 0
+        attributes:
+            'id': 'INT NOT NULL'
+            'link': 'CHAR 32 NOT NULL'
+    'movie_link':
+        file: 'benchmark/job/data/movie_link.csv'
+        format: 'csv'
+        delimiter: ','
+        header: 0
+        attributes:
+            'id': 'INT NOT NULL'
+            'movie_id': 'INT NOT NULL'
+            'linked_movie_id': 'INT NOT NULL'
+            'link_type_id': 'INT NOT NULL'
+    'name':
+        file: 'benchmark/job/data/name.csv'
+        format: 'csv'
+        delimiter: ','
+        header: 0
+        attributes:
+            'id': 'INT NOT NULL'
+            'name': 'CHAR 100 NOT NULL'
+            'imdb_index': 'CHAR 9'
+            'imdb_id': 'INT'
+            'gender': 'CHAR 1'
+            'name_pcode_cf': 'CHAR 5'
+            'name_pcode_nf': 'CHAR 5'
+            'surname_pcode': 'CHAR 5'
+            'md5sum': 'CHAR 32'
+    'person_info':
+        file: 'benchmark/job/data/person_info.csv'
+        format: 'csv'
+        delimiter: ','
+        header: 0
+        attributes:
+            'id': 'INT NOT NULL'
+            'person_id': 'INT NOT NULL'
+            'info_type_id': 'INT NOT NULL'
+            'info': 'CHAR 1 NOT NULL'
+            'note': 'CHAR 1'
+    'title':
+        file: 'benchmark/job/data/title.csv'
+        format: 'csv'
+        delimiter: ','
+        header: 0
+        attributes:
+            'id': 'INT NOT NULL'
+            'title': 'CHAR 100 NOT NULL'
+            'imdb_index': 'CHAR 5'
+            'kind_id': 'INT NOT NULL'
+            'production_year': 'INT'
+            'imdb_id': 'INT'
+            'phonetic_code': 'CHAR 5'
+            'episode_of_id': 'INT'
+            'season_nr': 'INT'
+            'episode_nr': 'INT'
+            'series_years': 'CHAR 9'
+            'md5sum': 'CHAR 32'
+
+
+systems:
+    mutable:
+        args: >-
+          --backend WasmV8
+          --no-simd
+          --cardinality-estimator Injected
+          --use-cardinality-file benchmark/result-db/algorithm/job/q7a_cardinalities.json
+          --insist-no-rehashing
+        configurations:                                   # Different experiment configurations.
+            'WasmV8, resultdb':
+                args: --result-db
+                pattern: '^Execute machine code:.*'
+            'WasmV8, decompose':
+                args: --decompose
+                pattern: '^Execute machine code:.*'
+            'WasmV8, single-table':
+                args: ''
+                pattern: '^Execute machine code:.*'
+        cases:
+            0: 'SELECT n.name,        t.title FROM aka_name AS an,      cast_info AS ci,      info_type AS it,      link_type AS lt,      movie_link AS ml,      name AS n,      person_info AS pi,      title AS t WHERE an.name LIKE "%a%"   AND it.info = "mini biography"   AND lt.link = "features"   AND n.name_pcode_cf >= "A"   AND n.name_pcode_cf <= "F"   AND (n.gender= "m"        OR (n.gender = "f"            AND n.name LIKE "B%"))   AND pi.note = "Volker Boehm"   AND t.production_year >= 1980   AND t.production_year <= 1995   AND n.id = an.person_id   AND n.id = pi.person_id   AND ci.person_id = n.id   AND t.id = ci.movie_id   AND ml.linked_movie_id = t.id   AND lt.id = ml.link_type_id   AND it.id = pi.info_type_id   AND pi.person_id = an.person_id   AND pi.person_id = ci.person_id   AND an.person_id = ci.person_id   AND ci.movie_id = ml.linked_movie_id;'

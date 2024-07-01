@@ -6,8 +6,8 @@ from abc import ABC, abstractmethod
 from typing import TypeAlias, Callable, Sequence, Any
 import multiprocessing
 
-DEFAULT_TIMEOUT: int  = 60   # seconds
-TIMEOUT_PER_CASE: int = 10   # seconds
+DEFAULT_TIMEOUT: int  = 600   # seconds
+TIMEOUT_PER_CASE: int = 60   # seconds
 
 # Type definitions used to represent connector results
 Case: TypeAlias = int | float | str

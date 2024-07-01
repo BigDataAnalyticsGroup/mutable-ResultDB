@@ -1,0 +1,16 @@
+{
+	"result_db": [
+		{"relations": ["k"], "size": 30},
+		{"relations": ["mi"], "size": 2287},
+		{"relations": ["mk"], "size": 4523930},
+		{"relations": ["t"], "size": 391666},
+		{"relations": ["mk", "k"], "size": 12951},
+		{"relations": ["mk", "mi"], "size": 7574},
+		{"relations": ["t", "mi"], "size": 227},
+		{"relations": ["t", "mk"], "size": 299534},
+		{"relations": ["mi", "k", "mk"], "size": 21},
+		{"relations": ["mk", "k", "t"], "size": 405},
+		{"relations": ["mk", "mi", "t"], "size": 920},
+		{"relations": ["mi", "t", "k", "mk"], "size": 5}
+	]
+}

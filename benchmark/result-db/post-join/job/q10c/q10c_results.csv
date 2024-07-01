@@ -1,0 +1,6 @@
+commit,date,version,suite,benchmark,experiment,name,config,case,time,runid
+a6ececbce870c1a654e8b4e446452a74c40f7ff6,2025-01-20,1,result-db,job,q10c,"mutable (single core, WasmV8, single-table)",Execution Time,0,0.078,0
+a6ececbce870c1a654e8b4e446452a74c40f7ff6,2025-01-20,1,result-db,job,q10c,"mutable (single core, WasmV8, single-table)",Execution Time,0,0.059,1
+a6ececbce870c1a654e8b4e446452a74c40f7ff6,2025-01-20,1,result-db,job,q10c,"mutable (single core, WasmV8, single-table)",Execution Time,0,0.046,2
+a6ececbce870c1a654e8b4e446452a74c40f7ff6,2025-01-20,1,result-db,job,q10c,"mutable (single core, WasmV8, single-table)",Execution Time,0,0.044,3
+a6ececbce870c1a654e8b4e446452a74c40f7ff6,2025-01-20,1,result-db,job,q10c,"mutable (single core, WasmV8, single-table)",Execution Time,0,0.05,4

@@ -1,0 +1,891 @@
+database,system,query,method,data_transfer,run,num_query_internal,time
+imdb,postgres,q3c,RM1. Dynamic SELECT DISTINCT,False,0,0,381.764
+imdb,postgres,q3c,RM1. Dynamic SELECT DISTINCT,False,1,0,405.861
+imdb,postgres,q3c,RM1. Dynamic SELECT DISTINCT,False,2,0,402.702
+imdb,postgres,q3c,RM1. Dynamic SELECT DISTINCT,False,3,0,402.365
+imdb,postgres,q3c,RM1. Dynamic SELECT DISTINCT,False,4,0,378.955
+imdb,postgres,q3c,RM2. Materialized SELECT DISTINCT,False,0,0,375.353
+imdb,postgres,q3c,RM2. Materialized SELECT DISTINCT,False,0,1,4.836
+imdb,postgres,q3c,RM2. Materialized SELECT DISTINCT,False,1,0,355.392
+imdb,postgres,q3c,RM2. Materialized SELECT DISTINCT,False,1,1,4.787
+imdb,postgres,q3c,RM2. Materialized SELECT DISTINCT,False,2,0,371.555
+imdb,postgres,q3c,RM2. Materialized SELECT DISTINCT,False,2,1,4.972
+imdb,postgres,q3c,RM2. Materialized SELECT DISTINCT,False,3,0,376.579
+imdb,postgres,q3c,RM2. Materialized SELECT DISTINCT,False,3,1,4.779
+imdb,postgres,q3c,RM2. Materialized SELECT DISTINCT,False,4,0,377.097
+imdb,postgres,q3c,RM2. Materialized SELECT DISTINCT,False,4,1,4.956
+imdb,postgres,q3c,RM3. Dynamic Subquery,False,0,0,481.279
+imdb,postgres,q3c,RM3. Dynamic Subquery,False,1,0,468.211
+imdb,postgres,q3c,RM3. Dynamic Subquery,False,2,0,490.793
+imdb,postgres,q3c,RM3. Dynamic Subquery,False,3,0,469.641
+imdb,postgres,q3c,RM3. Dynamic Subquery,False,4,0,468.090
+imdb,postgres,q3c,RM4. Materialized Subquery,False,0,0,369.964
+imdb,postgres,q3c,RM4. Materialized Subquery,False,0,1,16.098
+imdb,postgres,q3c,RM4. Materialized Subquery,False,1,0,377.301
+imdb,postgres,q3c,RM4. Materialized Subquery,False,1,1,16.815
+imdb,postgres,q3c,RM4. Materialized Subquery,False,2,0,345.673
+imdb,postgres,q3c,RM4. Materialized Subquery,False,2,1,16.080
+imdb,postgres,q3c,RM4. Materialized Subquery,False,3,0,343.404
+imdb,postgres,q3c,RM4. Materialized Subquery,False,3,1,16.307
+imdb,postgres,q3c,RM4. Materialized Subquery,False,4,0,351.321
+imdb,postgres,q3c,RM4. Materialized Subquery,False,4,1,16.005
+imdb,postgres,q3c,0. Single Table,False,0,0,399.808
+imdb,postgres,q3c,0. Single Table,False,1,0,416.416
+imdb,postgres,q3c,0. Single Table,False,2,0,418.548
+imdb,postgres,q3c,0. Single Table,False,3,0,396.836
+imdb,postgres,q3c,0. Single Table,False,4,0,392.366
+imdb,postgres,q4a,RM1. Dynamic SELECT DISTINCT,False,0,0,148.093
+imdb,postgres,q4a,RM1. Dynamic SELECT DISTINCT,False,0,1,67.790
+imdb,postgres,q4a,RM1. Dynamic SELECT DISTINCT,False,1,0,148.567
+imdb,postgres,q4a,RM1. Dynamic SELECT DISTINCT,False,1,1,68.945
+imdb,postgres,q4a,RM1. Dynamic SELECT DISTINCT,False,2,0,158.184
+imdb,postgres,q4a,RM1. Dynamic SELECT DISTINCT,False,2,1,67.787
+imdb,postgres,q4a,RM1. Dynamic SELECT DISTINCT,False,3,0,167.870
+imdb,postgres,q4a,RM1. Dynamic SELECT DISTINCT,False,3,1,68.708
+imdb,postgres,q4a,RM1. Dynamic SELECT DISTINCT,False,4,0,170.005
+imdb,postgres,q4a,RM1. Dynamic SELECT DISTINCT,False,4,1,67.767
+imdb,postgres,q4a,RM2. Materialized SELECT DISTINCT,False,0,0,180.346
+imdb,postgres,q4a,RM2. Materialized SELECT DISTINCT,False,0,1,2.225
+imdb,postgres,q4a,RM2. Materialized SELECT DISTINCT,False,0,2,1.916
+imdb,postgres,q4a,RM2. Materialized SELECT DISTINCT,False,1,0,169.809
+imdb,postgres,q4a,RM2. Materialized SELECT DISTINCT,False,1,1,2.219
+imdb,postgres,q4a,RM2. Materialized SELECT DISTINCT,False,1,2,1.861
+imdb,postgres,q4a,RM2. Materialized SELECT DISTINCT,False,2,0,156.565
+imdb,postgres,q4a,RM2. Materialized SELECT DISTINCT,False,2,1,2.241
+imdb,postgres,q4a,RM2. Materialized SELECT DISTINCT,False,2,2,1.972
+imdb,postgres,q4a,RM2. Materialized SELECT DISTINCT,False,3,0,153.589
+imdb,postgres,q4a,RM2. Materialized SELECT DISTINCT,False,3,1,3.920
+imdb,postgres,q4a,RM2. Materialized SELECT DISTINCT,False,3,2,1.988
+imdb,postgres,q4a,RM2. Materialized SELECT DISTINCT,False,4,0,189.059
+imdb,postgres,q4a,RM2. Materialized SELECT DISTINCT,False,4,1,2.228
+imdb,postgres,q4a,RM2. Materialized SELECT DISTINCT,False,4,2,1.981
+imdb,postgres,q4a,RM3. Dynamic Subquery,False,0,0,145.928
+imdb,postgres,q4a,RM3. Dynamic Subquery,False,0,1,68.689
+imdb,postgres,q4a,RM3. Dynamic Subquery,False,1,0,158.069
+imdb,postgres,q4a,RM3. Dynamic Subquery,False,1,1,69.328
+imdb,postgres,q4a,RM3. Dynamic Subquery,False,2,0,147.070
+imdb,postgres,q4a,RM3. Dynamic Subquery,False,2,1,69.399
+imdb,postgres,q4a,RM3. Dynamic Subquery,False,3,0,149.205
+imdb,postgres,q4a,RM3. Dynamic Subquery,False,3,1,69.434
+imdb,postgres,q4a,RM3. Dynamic Subquery,False,4,0,145.179
+imdb,postgres,q4a,RM3. Dynamic Subquery,False,4,1,68.749
+imdb,postgres,q4a,RM4. Materialized Subquery,False,0,0,144.894
+imdb,postgres,q4a,RM4. Materialized Subquery,False,0,1,70.122
+imdb,postgres,q4a,RM4. Materialized Subquery,False,0,2,3.670
+imdb,postgres,q4a,RM4. Materialized Subquery,False,1,0,145.937
+imdb,postgres,q4a,RM4. Materialized Subquery,False,1,1,27.251
+imdb,postgres,q4a,RM4. Materialized Subquery,False,1,2,3.434
+imdb,postgres,q4a,RM4. Materialized Subquery,False,2,0,140.078
+imdb,postgres,q4a,RM4. Materialized Subquery,False,2,1,23.486
+imdb,postgres,q4a,RM4. Materialized Subquery,False,2,2,3.484
+imdb,postgres,q4a,RM4. Materialized Subquery,False,3,0,148.431
+imdb,postgres,q4a,RM4. Materialized Subquery,False,3,1,22.236
+imdb,postgres,q4a,RM4. Materialized Subquery,False,3,2,3.418
+imdb,postgres,q4a,RM4. Materialized Subquery,False,4,0,154.708
+imdb,postgres,q4a,RM4. Materialized Subquery,False,4,1,25.506
+imdb,postgres,q4a,RM4. Materialized Subquery,False,4,2,3.520
+imdb,postgres,q4a,0. Single Table,False,0,0,168.886
+imdb,postgres,q4a,0. Single Table,False,1,0,154.981
+imdb,postgres,q4a,0. Single Table,False,2,0,149.501
+imdb,postgres,q4a,0. Single Table,False,3,0,151.713
+imdb,postgres,q4a,0. Single Table,False,4,0,156.219
+imdb,postgres,q9c,RM1. Dynamic SELECT DISTINCT,False,0,0,550.961
+imdb,postgres,q9c,RM1. Dynamic SELECT DISTINCT,False,0,1,494.716
+imdb,postgres,q9c,RM1. Dynamic SELECT DISTINCT,False,0,2,462.908
+imdb,postgres,q9c,RM1. Dynamic SELECT DISTINCT,False,0,3,466.804
+imdb,postgres,q9c,RM1. Dynamic SELECT DISTINCT,False,0,4,466.299
+imdb,postgres,q9c,RM1. Dynamic SELECT DISTINCT,False,1,0,578.321
+imdb,postgres,q9c,RM1. Dynamic SELECT DISTINCT,False,1,1,484.106
+imdb,postgres,q9c,RM1. Dynamic SELECT DISTINCT,False,1,2,475.908
+imdb,postgres,q9c,RM1. Dynamic SELECT DISTINCT,False,1,3,479.171
+imdb,postgres,q9c,RM1. Dynamic SELECT DISTINCT,False,1,4,476.057
+imdb,postgres,q9c,RM1. Dynamic SELECT DISTINCT,False,2,0,549.291
+imdb,postgres,q9c,RM1. Dynamic SELECT DISTINCT,False,2,1,487.979
+imdb,postgres,q9c,RM1. Dynamic SELECT DISTINCT,False,2,2,462.348
+imdb,postgres,q9c,RM1. Dynamic SELECT DISTINCT,False,2,3,459.327
+imdb,postgres,q9c,RM1. Dynamic SELECT DISTINCT,False,2,4,469.366
+imdb,postgres,q9c,RM1. Dynamic SELECT DISTINCT,False,3,0,546.368
+imdb,postgres,q9c,RM1. Dynamic SELECT DISTINCT,False,3,1,493.994
+imdb,postgres,q9c,RM1. Dynamic SELECT DISTINCT,False,3,2,476.055
+imdb,postgres,q9c,RM1. Dynamic SELECT DISTINCT,False,3,3,487.152
+imdb,postgres,q9c,RM1. Dynamic SELECT DISTINCT,False,3,4,486.147
+imdb,postgres,q9c,RM1. Dynamic SELECT DISTINCT,False,4,0,564.127
+imdb,postgres,q9c,RM1. Dynamic SELECT DISTINCT,False,4,1,491.869
+imdb,postgres,q9c,RM1. Dynamic SELECT DISTINCT,False,4,2,467.038
+imdb,postgres,q9c,RM1. Dynamic SELECT DISTINCT,False,4,3,470.171
+imdb,postgres,q9c,RM1. Dynamic SELECT DISTINCT,False,4,4,462.475
+imdb,postgres,q9c,RM2. Materialized SELECT DISTINCT,False,0,0,674.619
+imdb,postgres,q9c,RM2. Materialized SELECT DISTINCT,False,0,1,13.837
+imdb,postgres,q9c,RM2. Materialized SELECT DISTINCT,False,0,2,13.260
+imdb,postgres,q9c,RM2. Materialized SELECT DISTINCT,False,0,3,15.005
+imdb,postgres,q9c,RM2. Materialized SELECT DISTINCT,False,0,4,9.994
+imdb,postgres,q9c,RM2. Materialized SELECT DISTINCT,False,0,5,17.479
+imdb,postgres,q9c,RM2. Materialized SELECT DISTINCT,False,1,0,658.165
+imdb,postgres,q9c,RM2. Materialized SELECT DISTINCT,False,1,1,13.837
+imdb,postgres,q9c,RM2. Materialized SELECT DISTINCT,False,1,2,12.926
+imdb,postgres,q9c,RM2. Materialized SELECT DISTINCT,False,1,3,15.019
+imdb,postgres,q9c,RM2. Materialized SELECT DISTINCT,False,1,4,10.201
+imdb,postgres,q9c,RM2. Materialized SELECT DISTINCT,False,1,5,16.897
+imdb,postgres,q9c,RM2. Materialized SELECT DISTINCT,False,2,0,630.771
+imdb,postgres,q9c,RM2. Materialized SELECT DISTINCT,False,2,1,14.089
+imdb,postgres,q9c,RM2. Materialized SELECT DISTINCT,False,2,2,12.528
+imdb,postgres,q9c,RM2. Materialized SELECT DISTINCT,False,2,3,15.074
+imdb,postgres,q9c,RM2. Materialized SELECT DISTINCT,False,2,4,10.438
+imdb,postgres,q9c,RM2. Materialized SELECT DISTINCT,False,2,5,16.878
+imdb,postgres,q9c,RM2. Materialized SELECT DISTINCT,False,3,0,652.444
+imdb,postgres,q9c,RM2. Materialized SELECT DISTINCT,False,3,1,14.380
+imdb,postgres,q9c,RM2. Materialized SELECT DISTINCT,False,3,2,12.579
+imdb,postgres,q9c,RM2. Materialized SELECT DISTINCT,False,3,3,15.129
+imdb,postgres,q9c,RM2. Materialized SELECT DISTINCT,False,3,4,10.254
+imdb,postgres,q9c,RM2. Materialized SELECT DISTINCT,False,3,5,16.709
+imdb,postgres,q9c,RM2. Materialized SELECT DISTINCT,False,4,0,695.347
+imdb,postgres,q9c,RM2. Materialized SELECT DISTINCT,False,4,1,13.900
+imdb,postgres,q9c,RM2. Materialized SELECT DISTINCT,False,4,2,12.327
+imdb,postgres,q9c,RM2. Materialized SELECT DISTINCT,False,4,3,14.848
+imdb,postgres,q9c,RM2. Materialized SELECT DISTINCT,False,4,4,10.187
+imdb,postgres,q9c,RM2. Materialized SELECT DISTINCT,False,4,5,16.723
+imdb,postgres,q9c,RM3. Dynamic Subquery,False,0,0,744.286
+imdb,postgres,q9c,RM3. Dynamic Subquery,False,0,1,465.084
+imdb,postgres,q9c,RM3. Dynamic Subquery,False,0,2,403.497
+imdb,postgres,q9c,RM3. Dynamic Subquery,False,0,3,373.106
+imdb,postgres,q9c,RM3. Dynamic Subquery,False,0,4,437.730
+imdb,postgres,q9c,RM3. Dynamic Subquery,False,1,0,590.866
+imdb,postgres,q9c,RM3. Dynamic Subquery,False,1,1,479.548
+imdb,postgres,q9c,RM3. Dynamic Subquery,False,1,2,400.672
+imdb,postgres,q9c,RM3. Dynamic Subquery,False,1,3,387.101
+imdb,postgres,q9c,RM3. Dynamic Subquery,False,1,4,466.173
+imdb,postgres,q9c,RM3. Dynamic Subquery,False,2,0,591.536
+imdb,postgres,q9c,RM3. Dynamic Subquery,False,2,1,465.336
+imdb,postgres,q9c,RM3. Dynamic Subquery,False,2,2,400.478
+imdb,postgres,q9c,RM3. Dynamic Subquery,False,2,3,367.868
+imdb,postgres,q9c,RM3. Dynamic Subquery,False,2,4,462.466
+imdb,postgres,q9c,RM3. Dynamic Subquery,False,3,0,595.530
+imdb,postgres,q9c,RM3. Dynamic Subquery,False,3,1,464.379
+imdb,postgres,q9c,RM3. Dynamic Subquery,False,3,2,401.172
+imdb,postgres,q9c,RM3. Dynamic Subquery,False,3,3,374.806
+imdb,postgres,q9c,RM3. Dynamic Subquery,False,3,4,466.280
+imdb,postgres,q9c,RM3. Dynamic Subquery,False,4,0,568.054
+imdb,postgres,q9c,RM3. Dynamic Subquery,False,4,1,466.406
+imdb,postgres,q9c,RM3. Dynamic Subquery,False,4,2,407.870
+imdb,postgres,q9c,RM3. Dynamic Subquery,False,4,3,362.659
+imdb,postgres,q9c,RM3. Dynamic Subquery,False,4,4,438.376
+imdb,postgres,q9c,RM4. Materialized Subquery,False,0,0,608.339
+imdb,postgres,q9c,RM4. Materialized Subquery,False,0,1,23.650
+imdb,postgres,q9c,RM4. Materialized Subquery,False,0,2,4.692
+imdb,postgres,q9c,RM4. Materialized Subquery,False,0,3,15.611
+imdb,postgres,q9c,RM4. Materialized Subquery,False,0,4,2.838
+imdb,postgres,q9c,RM4. Materialized Subquery,False,0,5,10.687
+imdb,postgres,q9c,RM4. Materialized Subquery,False,1,0,597.578
+imdb,postgres,q9c,RM4. Materialized Subquery,False,1,1,7.991
+imdb,postgres,q9c,RM4. Materialized Subquery,False,1,2,4.809
+imdb,postgres,q9c,RM4. Materialized Subquery,False,1,3,16.645
+imdb,postgres,q9c,RM4. Materialized Subquery,False,1,4,2.814
+imdb,postgres,q9c,RM4. Materialized Subquery,False,1,5,10.522
+imdb,postgres,q9c,RM4. Materialized Subquery,False,2,0,607.412
+imdb,postgres,q9c,RM4. Materialized Subquery,False,2,1,8.833
+imdb,postgres,q9c,RM4. Materialized Subquery,False,2,2,4.807
+imdb,postgres,q9c,RM4. Materialized Subquery,False,2,3,21.639
+imdb,postgres,q9c,RM4. Materialized Subquery,False,2,4,2.842
+imdb,postgres,q9c,RM4. Materialized Subquery,False,2,5,10.717
+imdb,postgres,q9c,RM4. Materialized Subquery,False,3,0,599.415
+imdb,postgres,q9c,RM4. Materialized Subquery,False,3,1,16.986
+imdb,postgres,q9c,RM4. Materialized Subquery,False,3,2,4.764
+imdb,postgres,q9c,RM4. Materialized Subquery,False,3,3,25.108
+imdb,postgres,q9c,RM4. Materialized Subquery,False,3,4,2.838
+imdb,postgres,q9c,RM4. Materialized Subquery,False,3,5,10.631
+imdb,postgres,q9c,RM4. Materialized Subquery,False,4,0,591.668
+imdb,postgres,q9c,RM4. Materialized Subquery,False,4,1,12.199
+imdb,postgres,q9c,RM4. Materialized Subquery,False,4,2,4.736
+imdb,postgres,q9c,RM4. Materialized Subquery,False,4,3,22.739
+imdb,postgres,q9c,RM4. Materialized Subquery,False,4,4,2.830
+imdb,postgres,q9c,RM4. Materialized Subquery,False,4,5,10.545
+imdb,postgres,q9c,0. Single Table,False,0,0,492.183
+imdb,postgres,q9c,0. Single Table,False,1,0,494.129
+imdb,postgres,q9c,0. Single Table,False,2,0,498.805
+imdb,postgres,q9c,0. Single Table,False,3,0,492.194
+imdb,postgres,q9c,0. Single Table,False,4,0,486.033
+imdb,postgres,q11c,RM1. Dynamic SELECT DISTINCT,False,0,0,1075.366
+imdb,postgres,q11c,RM1. Dynamic SELECT DISTINCT,False,1,0,1110.625
+imdb,postgres,q11c,RM1. Dynamic SELECT DISTINCT,False,2,0,1104.242
+imdb,postgres,q11c,RM1. Dynamic SELECT DISTINCT,False,3,0,1064.262
+imdb,postgres,q11c,RM1. Dynamic SELECT DISTINCT,False,4,0,1104.638
+imdb,postgres,q11c,RM2. Materialized SELECT DISTINCT,False,0,0,1119.111
+imdb,postgres,q11c,RM2. Materialized SELECT DISTINCT,False,0,1,2.050
+imdb,postgres,q11c,RM2. Materialized SELECT DISTINCT,False,1,0,1119.903
+imdb,postgres,q11c,RM2. Materialized SELECT DISTINCT,False,1,1,1.938
+imdb,postgres,q11c,RM2. Materialized SELECT DISTINCT,False,2,0,1117.492
+imdb,postgres,q11c,RM2. Materialized SELECT DISTINCT,False,2,1,1.956
+imdb,postgres,q11c,RM2. Materialized SELECT DISTINCT,False,3,0,1222.251
+imdb,postgres,q11c,RM2. Materialized SELECT DISTINCT,False,3,1,2.231
+imdb,postgres,q11c,RM2. Materialized SELECT DISTINCT,False,4,0,1127.121
+imdb,postgres,q11c,RM2. Materialized SELECT DISTINCT,False,4,1,2.043
+imdb,postgres,q11c,RM3. Dynamic Subquery,False,0,0,184.666
+imdb,postgres,q11c,RM3. Dynamic Subquery,False,1,0,197.761
+imdb,postgres,q11c,RM3. Dynamic Subquery,False,2,0,204.725
+imdb,postgres,q11c,RM3. Dynamic Subquery,False,3,0,195.590
+imdb,postgres,q11c,RM3. Dynamic Subquery,False,4,0,194.619
+imdb,postgres,q11c,RM4. Materialized Subquery,False,0,0,1137.718
+imdb,postgres,q11c,RM4. Materialized Subquery,False,0,1,1.721
+imdb,postgres,q11c,RM4. Materialized Subquery,False,1,0,1122.702
+imdb,postgres,q11c,RM4. Materialized Subquery,False,1,1,1.636
+imdb,postgres,q11c,RM4. Materialized Subquery,False,2,0,1083.421
+imdb,postgres,q11c,RM4. Materialized Subquery,False,2,1,1.688
+imdb,postgres,q11c,RM4. Materialized Subquery,False,3,0,1090.377
+imdb,postgres,q11c,RM4. Materialized Subquery,False,3,1,1.638
+imdb,postgres,q11c,RM4. Materialized Subquery,False,4,0,1078.913
+imdb,postgres,q11c,RM4. Materialized Subquery,False,4,1,1.680
+imdb,postgres,q11c,0. Single Table,False,0,0,1120.892
+imdb,postgres,q11c,0. Single Table,False,1,0,1055.524
+imdb,postgres,q11c,0. Single Table,False,2,0,1120.693
+imdb,postgres,q11c,0. Single Table,False,3,0,1057.428
+imdb,postgres,q11c,0. Single Table,False,4,0,1127.251
+imdb,postgres,q16b,RM1. Dynamic SELECT DISTINCT,False,0,0,25441.126
+imdb,postgres,q16b,RM1. Dynamic SELECT DISTINCT,False,0,1,23287.136
+imdb,postgres,q16b,RM1. Dynamic SELECT DISTINCT,False,0,2,21319.476
+imdb,postgres,q16b,RM1. Dynamic SELECT DISTINCT,False,1,0,25207.602
+imdb,postgres,q16b,RM1. Dynamic SELECT DISTINCT,False,1,1,23216.790
+imdb,postgres,q16b,RM1. Dynamic SELECT DISTINCT,False,1,2,21252.709
+imdb,postgres,q16b,RM1. Dynamic SELECT DISTINCT,False,2,0,25359.800
+imdb,postgres,q16b,RM1. Dynamic SELECT DISTINCT,False,2,1,23253.977
+imdb,postgres,q16b,RM1. Dynamic SELECT DISTINCT,False,2,2,21221.287
+imdb,postgres,q16b,RM1. Dynamic SELECT DISTINCT,False,3,0,25623.311
+imdb,postgres,q16b,RM1. Dynamic SELECT DISTINCT,False,3,1,23451.174
+imdb,postgres,q16b,RM1. Dynamic SELECT DISTINCT,False,3,2,21410.213
+imdb,postgres,q16b,RM1. Dynamic SELECT DISTINCT,False,4,0,25318.577
+imdb,postgres,q16b,RM1. Dynamic SELECT DISTINCT,False,4,1,23230.626
+imdb,postgres,q16b,RM1. Dynamic SELECT DISTINCT,False,4,2,21233.459
+imdb,postgres,q16b,RM2. Materialized SELECT DISTINCT,False,0,0,22477.320
+imdb,postgres,q16b,RM2. Materialized SELECT DISTINCT,False,0,1,13066.692
+imdb,postgres,q16b,RM2. Materialized SELECT DISTINCT,False,0,2,12360.843
+imdb,postgres,q16b,RM2. Materialized SELECT DISTINCT,False,0,3,10536.252
+imdb,postgres,q16b,RM2. Materialized SELECT DISTINCT,False,1,0,44251.250
+imdb,postgres,q16b,RM2. Materialized SELECT DISTINCT,False,1,1,13079.029
+imdb,postgres,q16b,RM2. Materialized SELECT DISTINCT,False,1,2,12497.944
+imdb,postgres,q16b,RM2. Materialized SELECT DISTINCT,False,1,3,10432.069
+imdb,postgres,q16b,RM2. Materialized SELECT DISTINCT,False,2,0,39515.108
+imdb,postgres,q16b,RM2. Materialized SELECT DISTINCT,False,2,1,13184.638
+imdb,postgres,q16b,RM2. Materialized SELECT DISTINCT,False,2,2,12351.058
+imdb,postgres,q16b,RM2. Materialized SELECT DISTINCT,False,2,3,10204.952
+imdb,postgres,q16b,RM2. Materialized SELECT DISTINCT,False,3,0,40346.179
+imdb,postgres,q16b,RM2. Materialized SELECT DISTINCT,False,3,1,13388.310
+imdb,postgres,q16b,RM2. Materialized SELECT DISTINCT,False,3,2,12449.872
+imdb,postgres,q16b,RM2. Materialized SELECT DISTINCT,False,3,3,10476.580
+imdb,postgres,q16b,RM2. Materialized SELECT DISTINCT,False,4,0,40965.517
+imdb,postgres,q16b,RM2. Materialized SELECT DISTINCT,False,4,1,13129.127
+imdb,postgres,q16b,RM2. Materialized SELECT DISTINCT,False,4,2,12324.895
+imdb,postgres,q16b,RM2. Materialized SELECT DISTINCT,False,4,3,10464.638
+imdb,postgres,q16b,RM3. Dynamic Subquery,False,0,0,8879.982
+imdb,postgres,q16b,RM3. Dynamic Subquery,False,0,1,6123.019
+imdb,postgres,q16b,RM3. Dynamic Subquery,False,0,2,11510.432
+imdb,postgres,q16b,RM3. Dynamic Subquery,False,1,0,8832.136
+imdb,postgres,q16b,RM3. Dynamic Subquery,False,1,1,6138.719
+imdb,postgres,q16b,RM3. Dynamic Subquery,False,1,2,11496.108
+imdb,postgres,q16b,RM3. Dynamic Subquery,False,2,0,8862.716
+imdb,postgres,q16b,RM3. Dynamic Subquery,False,2,1,6144.308
+imdb,postgres,q16b,RM3. Dynamic Subquery,False,2,2,11516.410
+imdb,postgres,q16b,RM3. Dynamic Subquery,False,3,0,8878.745
+imdb,postgres,q16b,RM3. Dynamic Subquery,False,3,1,6128.315
+imdb,postgres,q16b,RM3. Dynamic Subquery,False,3,2,11482.827
+imdb,postgres,q16b,RM3. Dynamic Subquery,False,4,0,8851.768
+imdb,postgres,q16b,RM3. Dynamic Subquery,False,4,1,6121.693
+imdb,postgres,q16b,RM3. Dynamic Subquery,False,4,2,11507.104
+imdb,postgres,q16b,RM4. Materialized Subquery,False,0,0,15183.945
+imdb,postgres,q16b,RM4. Materialized Subquery,False,0,1,2123.236
+imdb,postgres,q16b,RM4. Materialized Subquery,False,0,2,3675.062
+imdb,postgres,q16b,RM4. Materialized Subquery,False,0,3,577.600
+imdb,postgres,q16b,RM4. Materialized Subquery,False,1,0,14991.944
+imdb,postgres,q16b,RM4. Materialized Subquery,False,1,1,2122.167
+imdb,postgres,q16b,RM4. Materialized Subquery,False,1,2,3681.017
+imdb,postgres,q16b,RM4. Materialized Subquery,False,1,3,2482.362
+imdb,postgres,q16b,RM4. Materialized Subquery,False,2,0,15063.259
+imdb,postgres,q16b,RM4. Materialized Subquery,False,2,1,2095.041
+imdb,postgres,q16b,RM4. Materialized Subquery,False,2,2,3659.166
+imdb,postgres,q16b,RM4. Materialized Subquery,False,2,3,578.598
+imdb,postgres,q16b,RM4. Materialized Subquery,False,3,0,16508.297
+imdb,postgres,q16b,RM4. Materialized Subquery,False,3,1,2117.600
+imdb,postgres,q16b,RM4. Materialized Subquery,False,3,2,3679.512
+imdb,postgres,q16b,RM4. Materialized Subquery,False,3,3,579.690
+imdb,postgres,q16b,RM4. Materialized Subquery,False,4,0,14892.500
+imdb,postgres,q16b,RM4. Materialized Subquery,False,4,1,2124.969
+imdb,postgres,q16b,RM4. Materialized Subquery,False,4,2,3685.846
+imdb,postgres,q16b,RM4. Materialized Subquery,False,4,3,578.278
+imdb,postgres,q16b,0. Single Table,False,0,0,11214.552
+imdb,postgres,q16b,0. Single Table,False,1,0,11247.564
+imdb,postgres,q16b,0. Single Table,False,2,0,11281.094
+imdb,postgres,q16b,0. Single Table,False,3,0,11271.031
+imdb,postgres,q16b,0. Single Table,False,4,0,11283.941
+imdb,postgres,q18c,RM1. Dynamic SELECT DISTINCT,False,0,0,2945.028
+imdb,postgres,q18c,RM1. Dynamic SELECT DISTINCT,False,0,1,2773.428
+imdb,postgres,q18c,RM1. Dynamic SELECT DISTINCT,False,0,2,2820.703
+imdb,postgres,q18c,RM1. Dynamic SELECT DISTINCT,False,1,0,2936.925
+imdb,postgres,q18c,RM1. Dynamic SELECT DISTINCT,False,1,1,2775.617
+imdb,postgres,q18c,RM1. Dynamic SELECT DISTINCT,False,1,2,2797.679
+imdb,postgres,q18c,RM1. Dynamic SELECT DISTINCT,False,2,0,2940.487
+imdb,postgres,q18c,RM1. Dynamic SELECT DISTINCT,False,2,1,2772.269
+imdb,postgres,q18c,RM1. Dynamic SELECT DISTINCT,False,2,2,2833.831
+imdb,postgres,q18c,RM1. Dynamic SELECT DISTINCT,False,3,0,2922.678
+imdb,postgres,q18c,RM1. Dynamic SELECT DISTINCT,False,3,1,2763.549
+imdb,postgres,q18c,RM1. Dynamic SELECT DISTINCT,False,3,2,2790.476
+imdb,postgres,q18c,RM1. Dynamic SELECT DISTINCT,False,4,0,2944.104
+imdb,postgres,q18c,RM1. Dynamic SELECT DISTINCT,False,4,1,2803.910
+imdb,postgres,q18c,RM1. Dynamic SELECT DISTINCT,False,4,2,2829.752
+imdb,postgres,q18c,RM2. Materialized SELECT DISTINCT,False,0,0,2964.237
+imdb,postgres,q18c,RM2. Materialized SELECT DISTINCT,False,0,1,83.637
+imdb,postgres,q18c,RM2. Materialized SELECT DISTINCT,False,0,2,83.772
+imdb,postgres,q18c,RM2. Materialized SELECT DISTINCT,False,0,3,82.831
+imdb,postgres,q18c,RM2. Materialized SELECT DISTINCT,False,1,0,2967.340
+imdb,postgres,q18c,RM2. Materialized SELECT DISTINCT,False,1,1,84.757
+imdb,postgres,q18c,RM2. Materialized SELECT DISTINCT,False,1,2,82.219
+imdb,postgres,q18c,RM2. Materialized SELECT DISTINCT,False,1,3,83.327
+imdb,postgres,q18c,RM2. Materialized SELECT DISTINCT,False,2,0,2955.593
+imdb,postgres,q18c,RM2. Materialized SELECT DISTINCT,False,2,1,84.685
+imdb,postgres,q18c,RM2. Materialized SELECT DISTINCT,False,2,2,85.027
+imdb,postgres,q18c,RM2. Materialized SELECT DISTINCT,False,2,3,83.062
+imdb,postgres,q18c,RM2. Materialized SELECT DISTINCT,False,3,0,2968.851
+imdb,postgres,q18c,RM2. Materialized SELECT DISTINCT,False,3,1,83.461
+imdb,postgres,q18c,RM2. Materialized SELECT DISTINCT,False,3,2,82.426
+imdb,postgres,q18c,RM2. Materialized SELECT DISTINCT,False,3,3,82.635
+imdb,postgres,q18c,RM2. Materialized SELECT DISTINCT,False,4,0,2982.077
+imdb,postgres,q18c,RM2. Materialized SELECT DISTINCT,False,4,1,85.739
+imdb,postgres,q18c,RM2. Materialized SELECT DISTINCT,False,4,2,84.052
+imdb,postgres,q18c,RM2. Materialized SELECT DISTINCT,False,4,3,84.848
+imdb,postgres,q18c,RM3. Dynamic Subquery,False,0,0,6385.166
+imdb,postgres,q18c,RM3. Dynamic Subquery,False,0,1,5245.829
+imdb,postgres,q18c,RM3. Dynamic Subquery,False,0,2,2636.934
+imdb,postgres,q18c,RM3. Dynamic Subquery,False,1,0,6259.233
+imdb,postgres,q18c,RM3. Dynamic Subquery,False,1,1,5298.780
+imdb,postgres,q18c,RM3. Dynamic Subquery,False,1,2,2650.722
+imdb,postgres,q18c,RM3. Dynamic Subquery,False,2,0,6312.392
+imdb,postgres,q18c,RM3. Dynamic Subquery,False,2,1,5287.750
+imdb,postgres,q18c,RM3. Dynamic Subquery,False,2,2,2651.522
+imdb,postgres,q18c,RM3. Dynamic Subquery,False,3,0,6249.567
+imdb,postgres,q18c,RM3. Dynamic Subquery,False,3,1,5286.324
+imdb,postgres,q18c,RM3. Dynamic Subquery,False,3,2,2660.288
+imdb,postgres,q18c,RM3. Dynamic Subquery,False,4,0,6305.747
+imdb,postgres,q18c,RM3. Dynamic Subquery,False,4,1,5281.470
+imdb,postgres,q18c,RM3. Dynamic Subquery,False,4,2,2638.330
+imdb,postgres,q18c,RM4. Materialized Subquery,False,0,0,2909.356
+imdb,postgres,q18c,RM4. Materialized Subquery,False,0,1,876.258
+imdb,postgres,q18c,RM4. Materialized Subquery,False,0,2,335.713
+imdb,postgres,q18c,RM4. Materialized Subquery,False,0,3,111.963
+imdb,postgres,q18c,RM4. Materialized Subquery,False,1,0,2897.377
+imdb,postgres,q18c,RM4. Materialized Subquery,False,1,1,167.127
+imdb,postgres,q18c,RM4. Materialized Subquery,False,1,2,93.938
+imdb,postgres,q18c,RM4. Materialized Subquery,False,1,3,112.742
+imdb,postgres,q18c,RM4. Materialized Subquery,False,2,0,2902.196
+imdb,postgres,q18c,RM4. Materialized Subquery,False,2,1,174.090
+imdb,postgres,q18c,RM4. Materialized Subquery,False,2,2,93.417
+imdb,postgres,q18c,RM4. Materialized Subquery,False,2,3,112.512
+imdb,postgres,q18c,RM4. Materialized Subquery,False,3,0,2908.166
+imdb,postgres,q18c,RM4. Materialized Subquery,False,3,1,173.623
+imdb,postgres,q18c,RM4. Materialized Subquery,False,3,2,93.976
+imdb,postgres,q18c,RM4. Materialized Subquery,False,3,3,112.815
+imdb,postgres,q18c,RM4. Materialized Subquery,False,4,0,2910.803
+imdb,postgres,q18c,RM4. Materialized Subquery,False,4,1,168.162
+imdb,postgres,q18c,RM4. Materialized Subquery,False,4,2,93.202
+imdb,postgres,q18c,RM4. Materialized Subquery,False,4,3,111.764
+imdb,postgres,q18c,0. Single Table,False,0,0,2881.159
+imdb,postgres,q18c,0. Single Table,False,1,0,2894.778
+imdb,postgres,q18c,0. Single Table,False,2,0,2850.399
+imdb,postgres,q18c,0. Single Table,False,3,0,2878.342
+imdb,postgres,q18c,0. Single Table,False,4,0,2883.575
+imdb,postgres,q22c,RM1. Dynamic SELECT DISTINCT,False,0,0,2288.314
+imdb,postgres,q22c,RM1. Dynamic SELECT DISTINCT,False,0,1,2172.638
+imdb,postgres,q22c,RM1. Dynamic SELECT DISTINCT,False,0,2,2161.415
+imdb,postgres,q22c,RM1. Dynamic SELECT DISTINCT,False,0,3,2158.295
+imdb,postgres,q22c,RM1. Dynamic SELECT DISTINCT,False,1,0,2265.796
+imdb,postgres,q22c,RM1. Dynamic SELECT DISTINCT,False,1,1,2139.304
+imdb,postgres,q22c,RM1. Dynamic SELECT DISTINCT,False,1,2,2137.431
+imdb,postgres,q22c,RM1. Dynamic SELECT DISTINCT,False,1,3,2145.655
+imdb,postgres,q22c,RM1. Dynamic SELECT DISTINCT,False,2,0,2260.427
+imdb,postgres,q22c,RM1. Dynamic SELECT DISTINCT,False,2,1,2145.152
+imdb,postgres,q22c,RM1. Dynamic SELECT DISTINCT,False,2,2,2148.292
+imdb,postgres,q22c,RM1. Dynamic SELECT DISTINCT,False,2,3,2123.041
+imdb,postgres,q22c,RM1. Dynamic SELECT DISTINCT,False,3,0,2246.096
+imdb,postgres,q22c,RM1. Dynamic SELECT DISTINCT,False,3,1,2141.048
+imdb,postgres,q22c,RM1. Dynamic SELECT DISTINCT,False,3,2,2138.528
+imdb,postgres,q22c,RM1. Dynamic SELECT DISTINCT,False,3,3,2129.123
+imdb,postgres,q22c,RM1. Dynamic SELECT DISTINCT,False,4,0,2260.873
+imdb,postgres,q22c,RM1. Dynamic SELECT DISTINCT,False,4,1,2148.578
+imdb,postgres,q22c,RM1. Dynamic SELECT DISTINCT,False,4,2,2144.761
+imdb,postgres,q22c,RM1. Dynamic SELECT DISTINCT,False,4,3,2139.171
+imdb,postgres,q22c,RM2. Materialized SELECT DISTINCT,False,0,0,2356.436
+imdb,postgres,q22c,RM2. Materialized SELECT DISTINCT,False,0,1,47.447
+imdb,postgres,q22c,RM2. Materialized SELECT DISTINCT,False,0,2,53.890
+imdb,postgres,q22c,RM2. Materialized SELECT DISTINCT,False,0,3,45.450
+imdb,postgres,q22c,RM2. Materialized SELECT DISTINCT,False,0,4,46.935
+imdb,postgres,q22c,RM2. Materialized SELECT DISTINCT,False,1,0,2351.619
+imdb,postgres,q22c,RM2. Materialized SELECT DISTINCT,False,1,1,47.215
+imdb,postgres,q22c,RM2. Materialized SELECT DISTINCT,False,1,2,53.886
+imdb,postgres,q22c,RM2. Materialized SELECT DISTINCT,False,1,3,44.698
+imdb,postgres,q22c,RM2. Materialized SELECT DISTINCT,False,1,4,45.874
+imdb,postgres,q22c,RM2. Materialized SELECT DISTINCT,False,2,0,2340.112
+imdb,postgres,q22c,RM2. Materialized SELECT DISTINCT,False,2,1,47.126
+imdb,postgres,q22c,RM2. Materialized SELECT DISTINCT,False,2,2,53.763
+imdb,postgres,q22c,RM2. Materialized SELECT DISTINCT,False,2,3,45.122
+imdb,postgres,q22c,RM2. Materialized SELECT DISTINCT,False,2,4,47.141
+imdb,postgres,q22c,RM2. Materialized SELECT DISTINCT,False,3,0,2368.911
+imdb,postgres,q22c,RM2. Materialized SELECT DISTINCT,False,3,1,47.576
+imdb,postgres,q22c,RM2. Materialized SELECT DISTINCT,False,3,2,52.191
+imdb,postgres,q22c,RM2. Materialized SELECT DISTINCT,False,3,3,44.658
+imdb,postgres,q22c,RM2. Materialized SELECT DISTINCT,False,3,4,46.710
+imdb,postgres,q22c,RM2. Materialized SELECT DISTINCT,False,4,0,2344.527
+imdb,postgres,q22c,RM2. Materialized SELECT DISTINCT,False,4,1,47.465
+imdb,postgres,q22c,RM2. Materialized SELECT DISTINCT,False,4,2,53.184
+imdb,postgres,q22c,RM2. Materialized SELECT DISTINCT,False,4,3,45.028
+imdb,postgres,q22c,RM2. Materialized SELECT DISTINCT,False,4,4,46.741
+imdb,postgres,q22c,RM3. Dynamic Subquery,False,0,0,1521.099
+imdb,postgres,q22c,RM3. Dynamic Subquery,False,0,1,802.117
+imdb,postgres,q22c,RM3. Dynamic Subquery,False,0,2,1599.324
+imdb,postgres,q22c,RM3. Dynamic Subquery,False,0,3,4907.744
+imdb,postgres,q22c,RM3. Dynamic Subquery,False,1,0,1532.393
+imdb,postgres,q22c,RM3. Dynamic Subquery,False,1,1,804.754
+imdb,postgres,q22c,RM3. Dynamic Subquery,False,1,2,1616.280
+imdb,postgres,q22c,RM3. Dynamic Subquery,False,1,3,4947.964
+imdb,postgres,q22c,RM3. Dynamic Subquery,False,2,0,1504.227
+imdb,postgres,q22c,RM3. Dynamic Subquery,False,2,1,803.118
+imdb,postgres,q22c,RM3. Dynamic Subquery,False,2,2,1610.337
+imdb,postgres,q22c,RM3. Dynamic Subquery,False,2,3,4913.453
+imdb,postgres,q22c,RM3. Dynamic Subquery,False,3,0,1516.927
+imdb,postgres,q22c,RM3. Dynamic Subquery,False,3,1,789.022
+imdb,postgres,q22c,RM3. Dynamic Subquery,False,3,2,1607.590
+imdb,postgres,q22c,RM3. Dynamic Subquery,False,3,3,4898.349
+imdb,postgres,q22c,RM3. Dynamic Subquery,False,4,0,1496.135
+imdb,postgres,q22c,RM3. Dynamic Subquery,False,4,1,796.252
+imdb,postgres,q22c,RM3. Dynamic Subquery,False,4,2,1608.449
+imdb,postgres,q22c,RM3. Dynamic Subquery,False,4,3,4876.643
+imdb,postgres,q22c,RM4. Materialized Subquery,False,0,0,2262.884
+imdb,postgres,q22c,RM4. Materialized Subquery,False,0,1,10.356
+imdb,postgres,q22c,RM4. Materialized Subquery,False,0,2,58.203
+imdb,postgres,q22c,RM4. Materialized Subquery,False,0,3,16.009
+imdb,postgres,q22c,RM4. Materialized Subquery,False,0,4,8.859
+imdb,postgres,q22c,RM4. Materialized Subquery,False,1,0,2268.288
+imdb,postgres,q22c,RM4. Materialized Subquery,False,1,1,10.296
+imdb,postgres,q22c,RM4. Materialized Subquery,False,1,2,59.488
+imdb,postgres,q22c,RM4. Materialized Subquery,False,1,3,14.068
+imdb,postgres,q22c,RM4. Materialized Subquery,False,1,4,8.839
+imdb,postgres,q22c,RM4. Materialized Subquery,False,2,0,2262.189
+imdb,postgres,q22c,RM4. Materialized Subquery,False,2,1,13.381
+imdb,postgres,q22c,RM4. Materialized Subquery,False,2,2,58.983
+imdb,postgres,q22c,RM4. Materialized Subquery,False,2,3,20.300
+imdb,postgres,q22c,RM4. Materialized Subquery,False,2,4,8.778
+imdb,postgres,q22c,RM4. Materialized Subquery,False,3,0,2236.590
+imdb,postgres,q22c,RM4. Materialized Subquery,False,3,1,10.391
+imdb,postgres,q22c,RM4. Materialized Subquery,False,3,2,60.225
+imdb,postgres,q22c,RM4. Materialized Subquery,False,3,3,13.920
+imdb,postgres,q22c,RM4. Materialized Subquery,False,3,4,8.788
+imdb,postgres,q22c,RM4. Materialized Subquery,False,4,0,2254.685
+imdb,postgres,q22c,RM4. Materialized Subquery,False,4,1,10.335
+imdb,postgres,q22c,RM4. Materialized Subquery,False,4,2,53.467
+imdb,postgres,q22c,RM4. Materialized Subquery,False,4,3,20.599
+imdb,postgres,q22c,RM4. Materialized Subquery,False,4,4,8.807
+imdb,postgres,q22c,0. Single Table,False,0,0,2205.842
+imdb,postgres,q22c,0. Single Table,False,1,0,2215.748
+imdb,postgres,q22c,0. Single Table,False,2,0,2216.230
+imdb,postgres,q22c,0. Single Table,False,3,0,2212.513
+imdb,postgres,q22c,0. Single Table,False,4,0,2202.433
+imdb,postgres,q25b,RM1. Dynamic SELECT DISTINCT,False,0,0,346.308
+imdb,postgres,q25b,RM1. Dynamic SELECT DISTINCT,False,0,1,329.012
+imdb,postgres,q25b,RM1. Dynamic SELECT DISTINCT,False,0,2,324.037
+imdb,postgres,q25b,RM1. Dynamic SELECT DISTINCT,False,0,3,339.145
+imdb,postgres,q25b,RM1. Dynamic SELECT DISTINCT,False,0,4,324.162
+imdb,postgres,q25b,RM1. Dynamic SELECT DISTINCT,False,1,0,353.645
+imdb,postgres,q25b,RM1. Dynamic SELECT DISTINCT,False,1,1,347.131
+imdb,postgres,q25b,RM1. Dynamic SELECT DISTINCT,False,1,2,333.068
+imdb,postgres,q25b,RM1. Dynamic SELECT DISTINCT,False,1,3,343.155
+imdb,postgres,q25b,RM1. Dynamic SELECT DISTINCT,False,1,4,343.056
+imdb,postgres,q25b,RM1. Dynamic SELECT DISTINCT,False,2,0,357.279
+imdb,postgres,q25b,RM1. Dynamic SELECT DISTINCT,False,2,1,320.658
+imdb,postgres,q25b,RM1. Dynamic SELECT DISTINCT,False,2,2,329.348
+imdb,postgres,q25b,RM1. Dynamic SELECT DISTINCT,False,2,3,322.737
+imdb,postgres,q25b,RM1. Dynamic SELECT DISTINCT,False,2,4,310.428
+imdb,postgres,q25b,RM1. Dynamic SELECT DISTINCT,False,3,0,346.827
+imdb,postgres,q25b,RM1. Dynamic SELECT DISTINCT,False,3,1,350.188
+imdb,postgres,q25b,RM1. Dynamic SELECT DISTINCT,False,3,2,326.790
+imdb,postgres,q25b,RM1. Dynamic SELECT DISTINCT,False,3,3,339.652
+imdb,postgres,q25b,RM1. Dynamic SELECT DISTINCT,False,3,4,319.910
+imdb,postgres,q25b,RM1. Dynamic SELECT DISTINCT,False,4,0,341.121
+imdb,postgres,q25b,RM1. Dynamic SELECT DISTINCT,False,4,1,329.755
+imdb,postgres,q25b,RM1. Dynamic SELECT DISTINCT,False,4,2,316.883
+imdb,postgres,q25b,RM1. Dynamic SELECT DISTINCT,False,4,3,320.372
+imdb,postgres,q25b,RM1. Dynamic SELECT DISTINCT,False,4,4,300.850
+imdb,postgres,q25b,RM2. Materialized SELECT DISTINCT,False,0,0,378.349
+imdb,postgres,q25b,RM2. Materialized SELECT DISTINCT,False,0,1,1.162
+imdb,postgres,q25b,RM2. Materialized SELECT DISTINCT,False,0,2,0.173
+imdb,postgres,q25b,RM2. Materialized SELECT DISTINCT,False,0,3,0.079
+imdb,postgres,q25b,RM2. Materialized SELECT DISTINCT,False,0,4,0.076
+imdb,postgres,q25b,RM2. Materialized SELECT DISTINCT,False,0,5,0.073
+imdb,postgres,q25b,RM2. Materialized SELECT DISTINCT,False,1,0,391.567
+imdb,postgres,q25b,RM2. Materialized SELECT DISTINCT,False,1,1,1.140
+imdb,postgres,q25b,RM2. Materialized SELECT DISTINCT,False,1,2,0.170
+imdb,postgres,q25b,RM2. Materialized SELECT DISTINCT,False,1,3,0.079
+imdb,postgres,q25b,RM2. Materialized SELECT DISTINCT,False,1,4,0.075
+imdb,postgres,q25b,RM2. Materialized SELECT DISTINCT,False,1,5,0.072
+imdb,postgres,q25b,RM2. Materialized SELECT DISTINCT,False,2,0,376.881
+imdb,postgres,q25b,RM2. Materialized SELECT DISTINCT,False,2,1,1.168
+imdb,postgres,q25b,RM2. Materialized SELECT DISTINCT,False,2,2,0.169
+imdb,postgres,q25b,RM2. Materialized SELECT DISTINCT,False,2,3,0.079
+imdb,postgres,q25b,RM2. Materialized SELECT DISTINCT,False,2,4,0.074
+imdb,postgres,q25b,RM2. Materialized SELECT DISTINCT,False,2,5,0.072
+imdb,postgres,q25b,RM2. Materialized SELECT DISTINCT,False,3,0,363.892
+imdb,postgres,q25b,RM2. Materialized SELECT DISTINCT,False,3,1,1.147
+imdb,postgres,q25b,RM2. Materialized SELECT DISTINCT,False,3,2,0.169
+imdb,postgres,q25b,RM2. Materialized SELECT DISTINCT,False,3,3,0.080
+imdb,postgres,q25b,RM2. Materialized SELECT DISTINCT,False,3,4,0.074
+imdb,postgres,q25b,RM2. Materialized SELECT DISTINCT,False,3,5,0.071
+imdb,postgres,q25b,RM2. Materialized SELECT DISTINCT,False,4,0,379.182
+imdb,postgres,q25b,RM2. Materialized SELECT DISTINCT,False,4,1,1.121
+imdb,postgres,q25b,RM2. Materialized SELECT DISTINCT,False,4,2,0.169
+imdb,postgres,q25b,RM2. Materialized SELECT DISTINCT,False,4,3,0.079
+imdb,postgres,q25b,RM2. Materialized SELECT DISTINCT,False,4,4,0.074
+imdb,postgres,q25b,RM2. Materialized SELECT DISTINCT,False,4,5,0.072
+imdb,postgres,q25b,RM3. Dynamic Subquery,False,0,0,336.142
+imdb,postgres,q25b,RM3. Dynamic Subquery,False,0,1,350.005
+imdb,postgres,q25b,RM3. Dynamic Subquery,False,0,2,265.889
+imdb,postgres,q25b,RM3. Dynamic Subquery,False,0,3,357.013
+imdb,postgres,q25b,RM3. Dynamic Subquery,False,0,4,1188.488
+imdb,postgres,q25b,RM3. Dynamic Subquery,False,1,0,352.729
+imdb,postgres,q25b,RM3. Dynamic Subquery,False,1,1,301.030
+imdb,postgres,q25b,RM3. Dynamic Subquery,False,1,2,243.176
+imdb,postgres,q25b,RM3. Dynamic Subquery,False,1,3,325.267
+imdb,postgres,q25b,RM3. Dynamic Subquery,False,1,4,1142.543
+imdb,postgres,q25b,RM3. Dynamic Subquery,False,2,0,348.662
+imdb,postgres,q25b,RM3. Dynamic Subquery,False,2,1,339.744
+imdb,postgres,q25b,RM3. Dynamic Subquery,False,2,2,279.042
+imdb,postgres,q25b,RM3. Dynamic Subquery,False,2,3,333.580
+imdb,postgres,q25b,RM3. Dynamic Subquery,False,2,4,1175.177
+imdb,postgres,q25b,RM3. Dynamic Subquery,False,3,0,336.014
+imdb,postgres,q25b,RM3. Dynamic Subquery,False,3,1,326.301
+imdb,postgres,q25b,RM3. Dynamic Subquery,False,3,2,249.287
+imdb,postgres,q25b,RM3. Dynamic Subquery,False,3,3,340.078
+imdb,postgres,q25b,RM3. Dynamic Subquery,False,3,4,1175.759
+imdb,postgres,q25b,RM3. Dynamic Subquery,False,4,0,333.158
+imdb,postgres,q25b,RM3. Dynamic Subquery,False,4,1,322.626
+imdb,postgres,q25b,RM3. Dynamic Subquery,False,4,2,261.862
+imdb,postgres,q25b,RM3. Dynamic Subquery,False,4,3,333.988
+imdb,postgres,q25b,RM3. Dynamic Subquery,False,4,4,1162.457
+imdb,postgres,q25b,RM4. Materialized Subquery,False,0,0,352.723
+imdb,postgres,q25b,RM4. Materialized Subquery,False,0,1,3.603
+imdb,postgres,q25b,RM4. Materialized Subquery,False,0,2,0.294
+imdb,postgres,q25b,RM4. Materialized Subquery,False,0,3,0.214
+imdb,postgres,q25b,RM4. Materialized Subquery,False,0,4,0.174
+imdb,postgres,q25b,RM4. Materialized Subquery,False,0,5,0.156
+imdb,postgres,q25b,RM4. Materialized Subquery,False,1,0,352.068
+imdb,postgres,q25b,RM4. Materialized Subquery,False,1,1,1.267
+imdb,postgres,q25b,RM4. Materialized Subquery,False,1,2,0.283
+imdb,postgres,q25b,RM4. Materialized Subquery,False,1,3,0.207
+imdb,postgres,q25b,RM4. Materialized Subquery,False,1,4,0.170
+imdb,postgres,q25b,RM4. Materialized Subquery,False,1,5,0.151
+imdb,postgres,q25b,RM4. Materialized Subquery,False,2,0,358.817
+imdb,postgres,q25b,RM4. Materialized Subquery,False,2,1,3.194
+imdb,postgres,q25b,RM4. Materialized Subquery,False,2,2,0.292
+imdb,postgres,q25b,RM4. Materialized Subquery,False,2,3,0.211
+imdb,postgres,q25b,RM4. Materialized Subquery,False,2,4,0.175
+imdb,postgres,q25b,RM4. Materialized Subquery,False,2,5,0.156
+imdb,postgres,q25b,RM4. Materialized Subquery,False,3,0,363.651
+imdb,postgres,q25b,RM4. Materialized Subquery,False,3,1,1.295
+imdb,postgres,q25b,RM4. Materialized Subquery,False,3,2,0.287
+imdb,postgres,q25b,RM4. Materialized Subquery,False,3,3,0.206
+imdb,postgres,q25b,RM4. Materialized Subquery,False,3,4,0.183
+imdb,postgres,q25b,RM4. Materialized Subquery,False,3,5,0.156
+imdb,postgres,q25b,RM4. Materialized Subquery,False,4,0,355.778
+imdb,postgres,q25b,RM4. Materialized Subquery,False,4,1,4.038
+imdb,postgres,q25b,RM4. Materialized Subquery,False,4,2,0.293
+imdb,postgres,q25b,RM4. Materialized Subquery,False,4,3,0.216
+imdb,postgres,q25b,RM4. Materialized Subquery,False,4,4,0.172
+imdb,postgres,q25b,RM4. Materialized Subquery,False,4,5,0.156
+imdb,postgres,q25b,0. Single Table,False,0,0,338.739
+imdb,postgres,q25b,0. Single Table,False,1,0,346.716
+imdb,postgres,q25b,0. Single Table,False,2,0,336.444
+imdb,postgres,q25b,0. Single Table,False,3,0,344.711
+imdb,postgres,q25b,0. Single Table,False,4,0,342.072
+imdb,postgres,q28c,RM1. Dynamic SELECT DISTINCT,False,0,0,2858.256
+imdb,postgres,q28c,RM1. Dynamic SELECT DISTINCT,False,0,1,2726.615
+imdb,postgres,q28c,RM1. Dynamic SELECT DISTINCT,False,0,2,2736.628
+imdb,postgres,q28c,RM1. Dynamic SELECT DISTINCT,False,0,3,2740.190
+imdb,postgres,q28c,RM1. Dynamic SELECT DISTINCT,False,1,0,2858.004
+imdb,postgres,q28c,RM1. Dynamic SELECT DISTINCT,False,1,1,2738.251
+imdb,postgres,q28c,RM1. Dynamic SELECT DISTINCT,False,1,2,2745.506
+imdb,postgres,q28c,RM1. Dynamic SELECT DISTINCT,False,1,3,2740.243
+imdb,postgres,q28c,RM1. Dynamic SELECT DISTINCT,False,2,0,2868.743
+imdb,postgres,q28c,RM1. Dynamic SELECT DISTINCT,False,2,1,2752.981
+imdb,postgres,q28c,RM1. Dynamic SELECT DISTINCT,False,2,2,2723.710
+imdb,postgres,q28c,RM1. Dynamic SELECT DISTINCT,False,2,3,2726.803
+imdb,postgres,q28c,RM1. Dynamic SELECT DISTINCT,False,3,0,2867.916
+imdb,postgres,q28c,RM1. Dynamic SELECT DISTINCT,False,3,1,2730.606
+imdb,postgres,q28c,RM1. Dynamic SELECT DISTINCT,False,3,2,2735.357
+imdb,postgres,q28c,RM1. Dynamic SELECT DISTINCT,False,3,3,2731.689
+imdb,postgres,q28c,RM1. Dynamic SELECT DISTINCT,False,4,0,2866.212
+imdb,postgres,q28c,RM1. Dynamic SELECT DISTINCT,False,4,1,2722.896
+imdb,postgres,q28c,RM1. Dynamic SELECT DISTINCT,False,4,2,2726.518
+imdb,postgres,q28c,RM1. Dynamic SELECT DISTINCT,False,4,3,2730.809
+imdb,postgres,q28c,RM2. Materialized SELECT DISTINCT,False,0,0,2999.762
+imdb,postgres,q28c,RM2. Materialized SELECT DISTINCT,False,0,1,19.091
+imdb,postgres,q28c,RM2. Materialized SELECT DISTINCT,False,0,2,19.847
+imdb,postgres,q28c,RM2. Materialized SELECT DISTINCT,False,0,3,15.071
+imdb,postgres,q28c,RM2. Materialized SELECT DISTINCT,False,0,4,15.705
+imdb,postgres,q28c,RM2. Materialized SELECT DISTINCT,False,1,0,2987.874
+imdb,postgres,q28c,RM2. Materialized SELECT DISTINCT,False,1,1,19.150
+imdb,postgres,q28c,RM2. Materialized SELECT DISTINCT,False,1,2,19.675
+imdb,postgres,q28c,RM2. Materialized SELECT DISTINCT,False,1,3,15.274
+imdb,postgres,q28c,RM2. Materialized SELECT DISTINCT,False,1,4,15.752
+imdb,postgres,q28c,RM2. Materialized SELECT DISTINCT,False,2,0,3023.843
+imdb,postgres,q28c,RM2. Materialized SELECT DISTINCT,False,2,1,19.418
+imdb,postgres,q28c,RM2. Materialized SELECT DISTINCT,False,2,2,19.756
+imdb,postgres,q28c,RM2. Materialized SELECT DISTINCT,False,2,3,14.985
+imdb,postgres,q28c,RM2. Materialized SELECT DISTINCT,False,2,4,15.586
+imdb,postgres,q28c,RM2. Materialized SELECT DISTINCT,False,3,0,3002.156
+imdb,postgres,q28c,RM2. Materialized SELECT DISTINCT,False,3,1,18.979
+imdb,postgres,q28c,RM2. Materialized SELECT DISTINCT,False,3,2,19.610
+imdb,postgres,q28c,RM2. Materialized SELECT DISTINCT,False,3,3,14.956
+imdb,postgres,q28c,RM2. Materialized SELECT DISTINCT,False,3,4,15.622
+imdb,postgres,q28c,RM2. Materialized SELECT DISTINCT,False,4,0,3013.181
+imdb,postgres,q28c,RM2. Materialized SELECT DISTINCT,False,4,1,19.301
+imdb,postgres,q28c,RM2. Materialized SELECT DISTINCT,False,4,2,19.833
+imdb,postgres,q28c,RM2. Materialized SELECT DISTINCT,False,4,3,15.241
+imdb,postgres,q28c,RM2. Materialized SELECT DISTINCT,False,4,4,15.825
+imdb,postgres,q28c,RM3. Dynamic Subquery,False,0,0,1223.873
+imdb,postgres,q28c,RM3. Dynamic Subquery,False,0,1,1604.856
+imdb,postgres,q28c,RM3. Dynamic Subquery,False,0,2,2962.225
+imdb,postgres,q28c,RM3. Dynamic Subquery,False,0,3,5869.001
+imdb,postgres,q28c,RM3. Dynamic Subquery,False,1,0,1223.865
+imdb,postgres,q28c,RM3. Dynamic Subquery,False,1,1,1617.190
+imdb,postgres,q28c,RM3. Dynamic Subquery,False,1,2,2986.596
+imdb,postgres,q28c,RM3. Dynamic Subquery,False,1,3,5933.079
+imdb,postgres,q28c,RM3. Dynamic Subquery,False,2,0,1241.760
+imdb,postgres,q28c,RM3. Dynamic Subquery,False,2,1,1602.594
+imdb,postgres,q28c,RM3. Dynamic Subquery,False,2,2,2956.632
+imdb,postgres,q28c,RM3. Dynamic Subquery,False,2,3,5868.753
+imdb,postgres,q28c,RM3. Dynamic Subquery,False,3,0,1214.213
+imdb,postgres,q28c,RM3. Dynamic Subquery,False,3,1,1613.201
+imdb,postgres,q28c,RM3. Dynamic Subquery,False,3,2,2986.277
+imdb,postgres,q28c,RM3. Dynamic Subquery,False,3,3,5839.663
+imdb,postgres,q28c,RM3. Dynamic Subquery,False,4,0,1227.501
+imdb,postgres,q28c,RM3. Dynamic Subquery,False,4,1,1597.231
+imdb,postgres,q28c,RM3. Dynamic Subquery,False,4,2,2952.939
+imdb,postgres,q28c,RM3. Dynamic Subquery,False,4,3,5844.231
+imdb,postgres,q28c,RM4. Materialized Subquery,False,0,0,2839.294
+imdb,postgres,q28c,RM4. Materialized Subquery,False,0,1,5.828
+imdb,postgres,q28c,RM4. Materialized Subquery,False,0,2,17.530
+imdb,postgres,q28c,RM4. Materialized Subquery,False,0,3,9.678
+imdb,postgres,q28c,RM4. Materialized Subquery,False,0,4,3.004
+imdb,postgres,q28c,RM4. Materialized Subquery,False,1,0,2860.085
+imdb,postgres,q28c,RM4. Materialized Subquery,False,1,1,5.776
+imdb,postgres,q28c,RM4. Materialized Subquery,False,1,2,21.365
+imdb,postgres,q28c,RM4. Materialized Subquery,False,1,3,6.329
+imdb,postgres,q28c,RM4. Materialized Subquery,False,1,4,2.913
+imdb,postgres,q28c,RM4. Materialized Subquery,False,2,0,2838.569
+imdb,postgres,q28c,RM4. Materialized Subquery,False,2,1,5.799
+imdb,postgres,q28c,RM4. Materialized Subquery,False,2,2,17.504
+imdb,postgres,q28c,RM4. Materialized Subquery,False,2,3,8.003
+imdb,postgres,q28c,RM4. Materialized Subquery,False,2,4,2.972
+imdb,postgres,q28c,RM4. Materialized Subquery,False,3,0,2848.687
+imdb,postgres,q28c,RM4. Materialized Subquery,False,3,1,5.943
+imdb,postgres,q28c,RM4. Materialized Subquery,False,3,2,21.883
+imdb,postgres,q28c,RM4. Materialized Subquery,False,3,3,6.865
+imdb,postgres,q28c,RM4. Materialized Subquery,False,3,4,2.964
+imdb,postgres,q28c,RM4. Materialized Subquery,False,4,0,2873.103
+imdb,postgres,q28c,RM4. Materialized Subquery,False,4,1,5.821
+imdb,postgres,q28c,RM4. Materialized Subquery,False,4,2,19.020
+imdb,postgres,q28c,RM4. Materialized Subquery,False,4,3,9.530
+imdb,postgres,q28c,RM4. Materialized Subquery,False,4,4,2.924
+imdb,postgres,q28c,0. Single Table,False,0,0,2804.631
+imdb,postgres,q28c,0. Single Table,False,1,0,2824.347
+imdb,postgres,q28c,0. Single Table,False,2,0,2812.310
+imdb,postgres,q28c,0. Single Table,False,3,0,2817.708
+imdb,postgres,q28c,0. Single Table,False,4,0,2805.211
+imdb,postgres,q33c,RM1. Dynamic SELECT DISTINCT,False,0,0,198.138
+imdb,postgres,q33c,RM1. Dynamic SELECT DISTINCT,False,0,1,164.517
+imdb,postgres,q33c,RM1. Dynamic SELECT DISTINCT,False,0,2,164.753
+imdb,postgres,q33c,RM1. Dynamic SELECT DISTINCT,False,0,3,94.105
+imdb,postgres,q33c,RM1. Dynamic SELECT DISTINCT,False,0,4,89.590
+imdb,postgres,q33c,RM1. Dynamic SELECT DISTINCT,False,0,5,165.126
+imdb,postgres,q33c,RM1. Dynamic SELECT DISTINCT,False,0,6,130.147
+imdb,postgres,q33c,RM1. Dynamic SELECT DISTINCT,False,0,7,105.728
+imdb,postgres,q33c,RM1. Dynamic SELECT DISTINCT,False,0,8,163.518
+imdb,postgres,q33c,RM1. Dynamic SELECT DISTINCT,False,1,0,192.768
+imdb,postgres,q33c,RM1. Dynamic SELECT DISTINCT,False,1,1,163.706
+imdb,postgres,q33c,RM1. Dynamic SELECT DISTINCT,False,1,2,164.967
+imdb,postgres,q33c,RM1. Dynamic SELECT DISTINCT,False,1,3,93.770
+imdb,postgres,q33c,RM1. Dynamic SELECT DISTINCT,False,1,4,92.458
+imdb,postgres,q33c,RM1. Dynamic SELECT DISTINCT,False,1,5,164.558
+imdb,postgres,q33c,RM1. Dynamic SELECT DISTINCT,False,1,6,128.870
+imdb,postgres,q33c,RM1. Dynamic SELECT DISTINCT,False,1,7,105.488
+imdb,postgres,q33c,RM1. Dynamic SELECT DISTINCT,False,1,8,163.333
+imdb,postgres,q33c,RM1. Dynamic SELECT DISTINCT,False,2,0,198.059
+imdb,postgres,q33c,RM1. Dynamic SELECT DISTINCT,False,2,1,165.712
+imdb,postgres,q33c,RM1. Dynamic SELECT DISTINCT,False,2,2,165.830
+imdb,postgres,q33c,RM1. Dynamic SELECT DISTINCT,False,2,3,97.595
+imdb,postgres,q33c,RM1. Dynamic SELECT DISTINCT,False,2,4,90.707
+imdb,postgres,q33c,RM1. Dynamic SELECT DISTINCT,False,2,5,165.631
+imdb,postgres,q33c,RM1. Dynamic SELECT DISTINCT,False,2,6,131.555
+imdb,postgres,q33c,RM1. Dynamic SELECT DISTINCT,False,2,7,106.081
+imdb,postgres,q33c,RM1. Dynamic SELECT DISTINCT,False,2,8,164.826
+imdb,postgres,q33c,RM1. Dynamic SELECT DISTINCT,False,3,0,200.632
+imdb,postgres,q33c,RM1. Dynamic SELECT DISTINCT,False,3,1,163.780
+imdb,postgres,q33c,RM1. Dynamic SELECT DISTINCT,False,3,2,165.021
+imdb,postgres,q33c,RM1. Dynamic SELECT DISTINCT,False,3,3,93.946
+imdb,postgres,q33c,RM1. Dynamic SELECT DISTINCT,False,3,4,90.880
+imdb,postgres,q33c,RM1. Dynamic SELECT DISTINCT,False,3,5,165.207
+imdb,postgres,q33c,RM1. Dynamic SELECT DISTINCT,False,3,6,129.195
+imdb,postgres,q33c,RM1. Dynamic SELECT DISTINCT,False,3,7,105.775
+imdb,postgres,q33c,RM1. Dynamic SELECT DISTINCT,False,3,8,163.161
+imdb,postgres,q33c,RM1. Dynamic SELECT DISTINCT,False,4,0,198.482
+imdb,postgres,q33c,RM1. Dynamic SELECT DISTINCT,False,4,1,164.499
+imdb,postgres,q33c,RM1. Dynamic SELECT DISTINCT,False,4,2,165.329
+imdb,postgres,q33c,RM1. Dynamic SELECT DISTINCT,False,4,3,94.017
+imdb,postgres,q33c,RM1. Dynamic SELECT DISTINCT,False,4,4,90.193
+imdb,postgres,q33c,RM1. Dynamic SELECT DISTINCT,False,4,5,165.373
+imdb,postgres,q33c,RM1. Dynamic SELECT DISTINCT,False,4,6,129.047
+imdb,postgres,q33c,RM1. Dynamic SELECT DISTINCT,False,4,7,105.231
+imdb,postgres,q33c,RM1. Dynamic SELECT DISTINCT,False,4,8,164.051
+imdb,postgres,q33c,RM2. Materialized SELECT DISTINCT,False,0,0,144.549
+imdb,postgres,q33c,RM2. Materialized SELECT DISTINCT,False,0,1,1.172
+imdb,postgres,q33c,RM2. Materialized SELECT DISTINCT,False,0,2,0.221
+imdb,postgres,q33c,RM2. Materialized SELECT DISTINCT,False,0,3,0.212
+imdb,postgres,q33c,RM2. Materialized SELECT DISTINCT,False,0,4,0.213
+imdb,postgres,q33c,RM2. Materialized SELECT DISTINCT,False,0,5,0.196
+imdb,postgres,q33c,RM2. Materialized SELECT DISTINCT,False,0,6,0.217
+imdb,postgres,q33c,RM2. Materialized SELECT DISTINCT,False,0,7,0.195
+imdb,postgres,q33c,RM2. Materialized SELECT DISTINCT,False,0,8,0.209
+imdb,postgres,q33c,RM2. Materialized SELECT DISTINCT,False,0,9,0.212
+imdb,postgres,q33c,RM2. Materialized SELECT DISTINCT,False,1,0,122.368
+imdb,postgres,q33c,RM2. Materialized SELECT DISTINCT,False,1,1,0.954
+imdb,postgres,q33c,RM2. Materialized SELECT DISTINCT,False,1,2,0.216
+imdb,postgres,q33c,RM2. Materialized SELECT DISTINCT,False,1,3,0.219
+imdb,postgres,q33c,RM2. Materialized SELECT DISTINCT,False,1,4,0.216
+imdb,postgres,q33c,RM2. Materialized SELECT DISTINCT,False,1,5,0.192
+imdb,postgres,q33c,RM2. Materialized SELECT DISTINCT,False,1,6,0.215
+imdb,postgres,q33c,RM2. Materialized SELECT DISTINCT,False,1,7,0.189
+imdb,postgres,q33c,RM2. Materialized SELECT DISTINCT,False,1,8,0.205
+imdb,postgres,q33c,RM2. Materialized SELECT DISTINCT,False,1,9,0.208
+imdb,postgres,q33c,RM2. Materialized SELECT DISTINCT,False,2,0,135.391
+imdb,postgres,q33c,RM2. Materialized SELECT DISTINCT,False,2,1,1.082
+imdb,postgres,q33c,RM2. Materialized SELECT DISTINCT,False,2,2,0.219
+imdb,postgres,q33c,RM2. Materialized SELECT DISTINCT,False,2,3,0.214
+imdb,postgres,q33c,RM2. Materialized SELECT DISTINCT,False,2,4,0.215
+imdb,postgres,q33c,RM2. Materialized SELECT DISTINCT,False,2,5,0.193
+imdb,postgres,q33c,RM2. Materialized SELECT DISTINCT,False,2,6,0.214
+imdb,postgres,q33c,RM2. Materialized SELECT DISTINCT,False,2,7,0.192
+imdb,postgres,q33c,RM2. Materialized SELECT DISTINCT,False,2,8,0.209
+imdb,postgres,q33c,RM2. Materialized SELECT DISTINCT,False,2,9,0.212
+imdb,postgres,q33c,RM2. Materialized SELECT DISTINCT,False,3,0,140.130
+imdb,postgres,q33c,RM2. Materialized SELECT DISTINCT,False,3,1,0.967
+imdb,postgres,q33c,RM2. Materialized SELECT DISTINCT,False,3,2,0.217
+imdb,postgres,q33c,RM2. Materialized SELECT DISTINCT,False,3,3,0.207
+imdb,postgres,q33c,RM2. Materialized SELECT DISTINCT,False,3,4,0.214
+imdb,postgres,q33c,RM2. Materialized SELECT DISTINCT,False,3,5,0.192
+imdb,postgres,q33c,RM2. Materialized SELECT DISTINCT,False,3,6,0.214
+imdb,postgres,q33c,RM2. Materialized SELECT DISTINCT,False,3,7,0.191
+imdb,postgres,q33c,RM2. Materialized SELECT DISTINCT,False,3,8,0.208
+imdb,postgres,q33c,RM2. Materialized SELECT DISTINCT,False,3,9,0.211
+imdb,postgres,q33c,RM2. Materialized SELECT DISTINCT,False,4,0,129.949
+imdb,postgres,q33c,RM2. Materialized SELECT DISTINCT,False,4,1,1.091
+imdb,postgres,q33c,RM2. Materialized SELECT DISTINCT,False,4,2,0.221
+imdb,postgres,q33c,RM2. Materialized SELECT DISTINCT,False,4,3,0.211
+imdb,postgres,q33c,RM2. Materialized SELECT DISTINCT,False,4,4,0.218
+imdb,postgres,q33c,RM2. Materialized SELECT DISTINCT,False,4,5,0.209
+imdb,postgres,q33c,RM2. Materialized SELECT DISTINCT,False,4,6,0.219
+imdb,postgres,q33c,RM2. Materialized SELECT DISTINCT,False,4,7,0.196
+imdb,postgres,q33c,RM2. Materialized SELECT DISTINCT,False,4,8,0.211
+imdb,postgres,q33c,RM2. Materialized SELECT DISTINCT,False,4,9,0.214
+imdb,postgres,q33c,RM3. Dynamic Subquery,False,0,0,202.739
+imdb,postgres,q33c,RM3. Dynamic Subquery,False,0,1,131.250
+imdb,postgres,q33c,RM3. Dynamic Subquery,False,0,2,135.135
+imdb,postgres,q33c,RM3. Dynamic Subquery,False,0,3,140.957
+imdb,postgres,q33c,RM3. Dynamic Subquery,False,0,4,132.632
+imdb,postgres,q33c,RM3. Dynamic Subquery,False,0,5,277.189
+imdb,postgres,q33c,RM3. Dynamic Subquery,False,0,6,168.499
+imdb,postgres,q33c,RM3. Dynamic Subquery,False,0,7,142.334
+imdb,postgres,q33c,RM3. Dynamic Subquery,False,0,8,192.166
+imdb,postgres,q33c,RM3. Dynamic Subquery,False,1,0,201.285
+imdb,postgres,q33c,RM3. Dynamic Subquery,False,1,1,130.871
+imdb,postgres,q33c,RM3. Dynamic Subquery,False,1,2,134.420
+imdb,postgres,q33c,RM3. Dynamic Subquery,False,1,3,140.794
+imdb,postgres,q33c,RM3. Dynamic Subquery,False,1,4,132.655
+imdb,postgres,q33c,RM3. Dynamic Subquery,False,1,5,277.955
+imdb,postgres,q33c,RM3. Dynamic Subquery,False,1,6,165.104
+imdb,postgres,q33c,RM3. Dynamic Subquery,False,1,7,142.164
+imdb,postgres,q33c,RM3. Dynamic Subquery,False,1,8,192.171
+imdb,postgres,q33c,RM3. Dynamic Subquery,False,2,0,212.999
+imdb,postgres,q33c,RM3. Dynamic Subquery,False,2,1,131.220
+imdb,postgres,q33c,RM3. Dynamic Subquery,False,2,2,134.731
+imdb,postgres,q33c,RM3. Dynamic Subquery,False,2,3,140.925
+imdb,postgres,q33c,RM3. Dynamic Subquery,False,2,4,132.382
+imdb,postgres,q33c,RM3. Dynamic Subquery,False,2,5,277.750
+imdb,postgres,q33c,RM3. Dynamic Subquery,False,2,6,167.998
+imdb,postgres,q33c,RM3. Dynamic Subquery,False,2,7,142.199
+imdb,postgres,q33c,RM3. Dynamic Subquery,False,2,8,192.206
+imdb,postgres,q33c,RM3. Dynamic Subquery,False,3,0,208.884
+imdb,postgres,q33c,RM3. Dynamic Subquery,False,3,1,132.357
+imdb,postgres,q33c,RM3. Dynamic Subquery,False,3,2,135.199
+imdb,postgres,q33c,RM3. Dynamic Subquery,False,3,3,140.725
+imdb,postgres,q33c,RM3. Dynamic Subquery,False,3,4,132.435
+imdb,postgres,q33c,RM3. Dynamic Subquery,False,3,5,278.596
+imdb,postgres,q33c,RM3. Dynamic Subquery,False,3,6,172.150
+imdb,postgres,q33c,RM3. Dynamic Subquery,False,3,7,142.241
+imdb,postgres,q33c,RM3. Dynamic Subquery,False,3,8,192.305
+imdb,postgres,q33c,RM3. Dynamic Subquery,False,4,0,212.940
+imdb,postgres,q33c,RM3. Dynamic Subquery,False,4,1,130.789
+imdb,postgres,q33c,RM3. Dynamic Subquery,False,4,2,134.668
+imdb,postgres,q33c,RM3. Dynamic Subquery,False,4,3,140.525
+imdb,postgres,q33c,RM3. Dynamic Subquery,False,4,4,132.265
+imdb,postgres,q33c,RM3. Dynamic Subquery,False,4,5,277.802
+imdb,postgres,q33c,RM3. Dynamic Subquery,False,4,6,169.197
+imdb,postgres,q33c,RM3. Dynamic Subquery,False,4,7,142.669
+imdb,postgres,q33c,RM3. Dynamic Subquery,False,4,8,191.719
+imdb,postgres,q33c,RM4. Materialized Subquery,False,0,0,115.317
+imdb,postgres,q33c,RM4. Materialized Subquery,False,0,1,1.032
+imdb,postgres,q33c,RM4. Materialized Subquery,False,0,2,0.256
+imdb,postgres,q33c,RM4. Materialized Subquery,False,0,3,0.471
+imdb,postgres,q33c,RM4. Materialized Subquery,False,0,4,0.383
+imdb,postgres,q33c,RM4. Materialized Subquery,False,0,5,2.525
+imdb,postgres,q33c,RM4. Materialized Subquery,False,0,6,0.754
+imdb,postgres,q33c,RM4. Materialized Subquery,False,0,7,2.144
+imdb,postgres,q33c,RM4. Materialized Subquery,False,0,8,0.249
+imdb,postgres,q33c,RM4. Materialized Subquery,False,0,9,0.207
+imdb,postgres,q33c,RM4. Materialized Subquery,False,1,0,126.547
+imdb,postgres,q33c,RM4. Materialized Subquery,False,1,1,1.016
+imdb,postgres,q33c,RM4. Materialized Subquery,False,1,2,0.255
+imdb,postgres,q33c,RM4. Materialized Subquery,False,1,3,0.465
+imdb,postgres,q33c,RM4. Materialized Subquery,False,1,4,0.363
+imdb,postgres,q33c,RM4. Materialized Subquery,False,1,5,0.274
+imdb,postgres,q33c,RM4. Materialized Subquery,False,1,6,0.258
+imdb,postgres,q33c,RM4. Materialized Subquery,False,1,7,2.152
+imdb,postgres,q33c,RM4. Materialized Subquery,False,1,8,0.240
+imdb,postgres,q33c,RM4. Materialized Subquery,False,1,9,0.204
+imdb,postgres,q33c,RM4. Materialized Subquery,False,2,0,111.171
+imdb,postgres,q33c,RM4. Materialized Subquery,False,2,1,1.202
+imdb,postgres,q33c,RM4. Materialized Subquery,False,2,2,0.259
+imdb,postgres,q33c,RM4. Materialized Subquery,False,2,3,0.470
+imdb,postgres,q33c,RM4. Materialized Subquery,False,2,4,0.367
+imdb,postgres,q33c,RM4. Materialized Subquery,False,2,5,0.275
+imdb,postgres,q33c,RM4. Materialized Subquery,False,2,6,0.257
+imdb,postgres,q33c,RM4. Materialized Subquery,False,2,7,2.170
+imdb,postgres,q33c,RM4. Materialized Subquery,False,2,8,0.243
+imdb,postgres,q33c,RM4. Materialized Subquery,False,2,9,0.202
+imdb,postgres,q33c,RM4. Materialized Subquery,False,3,0,133.362
+imdb,postgres,q33c,RM4. Materialized Subquery,False,3,1,3.645
+imdb,postgres,q33c,RM4. Materialized Subquery,False,3,2,0.256
+imdb,postgres,q33c,RM4. Materialized Subquery,False,3,3,0.450
+imdb,postgres,q33c,RM4. Materialized Subquery,False,3,4,0.354
+imdb,postgres,q33c,RM4. Materialized Subquery,False,3,5,0.272
+imdb,postgres,q33c,RM4. Materialized Subquery,False,3,6,0.248
+imdb,postgres,q33c,RM4. Materialized Subquery,False,3,7,2.179
+imdb,postgres,q33c,RM4. Materialized Subquery,False,3,8,0.243
+imdb,postgres,q33c,RM4. Materialized Subquery,False,3,9,0.201
+imdb,postgres,q33c,RM4. Materialized Subquery,False,4,0,116.174
+imdb,postgres,q33c,RM4. Materialized Subquery,False,4,1,1.219
+imdb,postgres,q33c,RM4. Materialized Subquery,False,4,2,0.255
+imdb,postgres,q33c,RM4. Materialized Subquery,False,4,3,0.467
+imdb,postgres,q33c,RM4. Materialized Subquery,False,4,4,0.363
+imdb,postgres,q33c,RM4. Materialized Subquery,False,4,5,0.273
+imdb,postgres,q33c,RM4. Materialized Subquery,False,4,6,0.255
+imdb,postgres,q33c,RM4. Materialized Subquery,False,4,7,2.178
+imdb,postgres,q33c,RM4. Materialized Subquery,False,4,8,0.242
+imdb,postgres,q33c,RM4. Materialized Subquery,False,4,9,0.204
+imdb,postgres,q33c,0. Single Table,False,0,0,106.554
+imdb,postgres,q33c,0. Single Table,False,1,0,117.824
+imdb,postgres,q33c,0. Single Table,False,2,0,103.183
+imdb,postgres,q33c,0. Single Table,False,3,0,96.702
+imdb,postgres,q33c,0. Single Table,False,4,0,115.258

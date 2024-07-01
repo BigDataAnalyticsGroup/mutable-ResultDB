@@ -1,0 +1,23 @@
+{
+	"result_db": [
+		{"relations": ["ct"], "size": 1},
+		{"relations": ["it"], "size": 113},
+		{"relations": ["mc"], "size": 1418},
+		{"relations": ["mi"], "size": 552777},
+		{"relations": ["t"], "size": 391666},
+		{"relations": ["mc", "ct"], "size": 0},
+		{"relations": ["mi", "it"], "size": 552777},
+		{"relations": ["mi", "mc"], "size": 1768},
+		{"relations": ["t", "mc"], "size": 0},
+		{"relations": ["t", "mi"], "size": 82354},
+		{"relations": ["mc", "ct", "mi"], "size": 0},
+		{"relations": ["mc", "ct", "t"], "size": 0},
+		{"relations": ["mc", "it", "mi"], "size": 1768},
+		{"relations": ["mi", "it", "t"], "size": 82354},
+		{"relations": ["mi", "mc", "t"], "size": 0},
+		{"relations": ["it", "mi", "ct", "mc"], "size": 0},
+		{"relations": ["mc", "t", "ct", "mi"], "size": 0},
+		{"relations": ["mc", "t", "it", "mi"], "size": 0},
+		{"relations": ["it", "mi", "t", "ct", "mc"], "size": 0}
+	]
+}
