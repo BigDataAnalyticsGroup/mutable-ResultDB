@@ -17,6 +17,10 @@ mu*t*able is a relational main-memory database system.
 With mu*t*able, our goal is to develop a database system that allows for efficient prototyping of research ideas while
 striving for performance that is competitive to state-of-the-art systems.
 
+## Result DB
+To execute the Result DB experiments, please follow these
+[instructions](https://github.com/BigDataAnalyticsGroup/mutable-ResultDB/blob/result-db/benchmark/result-db/instructions.md).
+
 ### Defining Papers
 
 - mu*t*able: A Modern DBMS for Research and Fast Prototyping [@CIDR 2023](https://www.cidrdb.org/cidr2023/index.html) [[PDF]](https://bigdata.uni-saarland.de/publications/Haffner,%20Dittrich%20-%20mutable:%20A%20Modern%20DBMS%20for%20Research%20and%20Fast%20Prototyping%20@CIDR2023.pdf)
