@@ -678,6 +678,11 @@ struct CollectStringLiterals : ConstOperatorVisitor, ast::ConstASTExprVisitor
             (*this)(join->condition());
         recurse(op);
     }
+    void operator()(const DecomposeOperator & op) override {
+        for (auto p : op.projections())
+            (*this)(p.first.get());
+        recurse(op);
+    }
     void operator()(const ProjectionOperator &op) override {
         for (auto &p : op.projections())
             (*this)(p.first.get());
@@ -763,6 +768,7 @@ struct CollectTables : ConstOperatorVisitor
     void operator()(const DisjunctiveFilterOperator &op) override { recurse(op); }
     void operator()(const JoinOperator &op) override { recurse(op); }
     void operator()(const SemiJoinReductionOperator &op) override { recurse(op); }
+    void operator()(const DecomposeOperator &op) override { recurse(op); }
     void operator()(const ProjectionOperator &op) override { recurse(op); }
     void operator()(const LimitOperator &op) override { recurse(op); }
     void operator()(const GroupingOperator &op) override { recurse(op); }
