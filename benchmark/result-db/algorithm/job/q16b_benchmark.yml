@@ -1,0 +1,140 @@
+description: Join-Order Benchmark q16b.
+suite: result-db
+benchmark: job
+name: q16b
+readonly: true
+chart:
+    x:
+        scale: linear
+        type: O
+        label: JOB Queries
+    y:
+        scale: linear
+        type: Q
+        label: 'Execution time [ms]'
+    # Defaults: scale is "linear", type is "Q", label is "X" or "Y"
+data:
+    'aka_name':
+        file: 'benchmark/job/data/aka_name.csv'
+        format: 'csv'
+        delimiter: ','
+        header: 0
+        attributes:
+            'id': 'INT NOT NULL'
+            'person_id': 'INT NOT NULL'
+            'name': 'CHAR 16 NOT NULL'
+            'imdb_index': 'CHAR 3'
+            'name_pcode_cf': 'CHAR 5'
+            'name_pcode_nf': 'CHAR 5'
+            'surname_pcode': 'CHAR 5'
+            'md5sum': 'CHAR 32'
+    'cast_info':
+        file: 'benchmark/job/data/cast_info.csv'
+        format: 'csv'
+        delimiter: ','
+        header: 0
+        attributes:
+            'id': 'INT NOT NULL'
+            'person_id': 'INT NOT NULL'
+            'movie_id': 'INT NOT NULL'
+            'person_role_id': 'INT'
+            'note': 'CHAR 18'
+            'nr_order': 'INT'
+            'role_id': 'INT NOT NULL'
+    'company_name':
+        file: 'benchmark/job/data/company_name.csv'
+        format: 'csv'
+        delimiter: ','
+        header: 0
+        attributes:
+            'id': 'INT NOT NULL'
+            'name': 'CHAR 100 NOT NULL'
+            'country_code': 'CHAR 6'
+            'imdb_id': 'INT'
+            'name_pcode_nf': 'CHAR 5'
+            'name_pcode_sf': 'CHAR 5'
+            'md5sum': 'CHAR 32'
+    'keyword':
+        file: 'benchmark/job/data/keyword.csv'
+        format: 'csv'
+        delimiter: ','
+        header: 0
+        attributes:
+            'id': 'INT NOT NULL'
+            'keyword': 'CHAR 74 NOT NULL'
+            'phonetic_code': 'CHAR 5'
+    'movie_companies':
+        file: 'benchmark/job/data/movie_companies.csv'
+        format: 'csv'
+        delimiter: ','
+        header: 0
+        attributes:
+            'id': 'INT NOT NULL'
+            'movie_id': 'INT NOT NULL'
+            'company_id': 'INT NOT NULL'
+            'company_type_id': 'INT NOT NULL'
+            'note': 'CHAR 100'
+    'movie_keyword':
+        file: 'benchmark/job/data/movie_keyword.csv'
+        format: 'csv'
+        delimiter: ','
+        header: 0
+        attributes:
+            'id': 'INT NOT NULL'
+            'movie_id': 'INT NOT NULL'
+            'keyword_id': 'INT NOT NULL'
+    'name':
+        file: 'benchmark/job/data/name.csv'
+        format: 'csv'
+        delimiter: ','
+        header: 0
+        attributes:
+            'id': 'INT NOT NULL'
+            'name': 'CHAR 100 NOT NULL'
+            'imdb_index': 'CHAR 9'
+            'imdb_id': 'INT'
+            'gender': 'CHAR 1'
+            'name_pcode_cf': 'CHAR 5'
+            'name_pcode_nf': 'CHAR 5'
+            'surname_pcode': 'CHAR 5'
+            'md5sum': 'CHAR 32'
+    'title':
+        file: 'benchmark/job/data/title.csv'
+        format: 'csv'
+        delimiter: ','
+        header: 0
+        attributes:
+            'id': 'INT NOT NULL'
+            'title': 'CHAR 100 NOT NULL'
+            'imdb_index': 'CHAR 5'
+            'kind_id': 'INT NOT NULL'
+            'production_year': 'INT'
+            'imdb_id': 'INT'
+            'phonetic_code': 'CHAR 5'
+            'episode_of_id': 'INT'
+            'season_nr': 'INT'
+            'episode_nr': 'INT'
+            'series_years': 'CHAR 9'
+            'md5sum': 'CHAR 32'
+
+
+systems:
+    mutable:
+        args: >-
+          --backend WasmV8
+          --no-simd
+          --cardinality-estimator Injected
+          --use-cardinality-file benchmark/result-db/algorithm/job/q16b_cardinalities.json
+          --insist-no-rehashing
+        configurations:                                   # Different experiment configurations.
+            'WasmV8, resultdb':
+                args: --result-db
+                pattern: '^Execute machine code:.*'
+            'WasmV8, decompose':
+                args: --decompose
+                pattern: '^Execute machine code:.*'
+            'WasmV8, single-table':
+                args: ''
+                pattern: '^Execute machine code:.*'
+        cases:
+            0: 'SELECT an.name, t.title FROM aka_name AS an, cast_info AS ci, company_name AS cn, keyword AS k, movie_companies AS mc, movie_keyword AS mk, name AS n, title AS t WHERE cn.country_code ="[us]" AND k.keyword ="character-name-in-title" AND an.person_id = n.id AND n.id = ci.person_id AND ci.movie_id = t.id AND t.id = mk.movie_id AND mk.keyword_id = k.id AND t.id = mc.movie_id AND mc.company_id = cn.id AND an.person_id = ci.person_id AND ci.movie_id = mc.movie_id AND ci.movie_id = mk.movie_id AND mc.movie_id = mk.movie_id;'

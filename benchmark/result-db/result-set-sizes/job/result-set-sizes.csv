@@ -1,0 +1,736 @@
+database,query,method,relation,count,size
+imdb,q1a,rdb_w_post_join_info,movie_companies,116,2676
+imdb,q1a,rdb_w_post_join_info,title,105,2696
+imdb,q1a,rdb_wo_post_join_info,movie_companies,35,1303
+imdb,q1a,rdb_wo_post_join_info,title,105,2276
+imdb,q1a,Single Table,,142,5615
+imdb,q1b,rdb_w_post_join_info,movie_companies,3,89
+imdb,q1b,rdb_w_post_join_info,title,1,22
+imdb,q1b,rdb_wo_post_join_info,movie_companies,3,77
+imdb,q1b,rdb_wo_post_join_info,title,1,18
+imdb,q1b,Single Table,,3,131
+imdb,q1c,rdb_w_post_join_info,movie_companies,1,19
+imdb,q1c,rdb_w_post_join_info,title,1,20
+imdb,q1c,rdb_wo_post_join_info,movie_companies,1,15
+imdb,q1c,rdb_wo_post_join_info,title,1,16
+imdb,q1c,Single Table,,3,93
+imdb,q1d,rdb_w_post_join_info,movie_companies,4,109
+imdb,q1d,rdb_w_post_join_info,title,2,58
+imdb,q1d,rdb_wo_post_join_info,movie_companies,4,93
+imdb,q1d,rdb_wo_post_join_info,title,2,50
+imdb,q1d,Single Table,,4,179
+imdb,q2a,rdb_w_post_join_info,title,4127,82650
+imdb,q2a,rdb_wo_post_join_info,title,4127,82650
+imdb,q2a,Single Table,,7834,154901
+imdb,q2b,rdb_w_post_join_info,title,2493,46617
+imdb,q2b,rdb_wo_post_join_info,title,2493,46617
+imdb,q2b,Single Table,,5228,92919
+imdb,q2c,rdb_w_post_join_info,title,0,0
+imdb,q2c,rdb_wo_post_join_info,title,0,0
+imdb,q2c,Single Table,,0,0
+imdb,q2d,rdb_w_post_join_info,title,22852,525185
+imdb,q2d,rdb_wo_post_join_info,title,22852,525185
+imdb,q2d,Single Table,,68316,1454730
+imdb,q3a,rdb_w_post_join_info,title,105,2267
+imdb,q3a,rdb_wo_post_join_info,title,105,2267
+imdb,q3a,Single Table,,206,4305
+imdb,q3b,rdb_w_post_join_info,title,3,51
+imdb,q3b,rdb_wo_post_join_info,title,3,51
+imdb,q3b,Single Table,,5,85
+imdb,q3c,rdb_w_post_join_info,title,4470,104104
+imdb,q3c,rdb_wo_post_join_info,title,4470,104104
+imdb,q3c,Single Table,,7250,170144
+imdb,q4a,rdb_w_post_join_info,movie_info_idx,564,3948
+imdb,q4a,rdb_w_post_join_info,title,564,15584
+imdb,q4a,rdb_wo_post_join_info,movie_info_idx,45,135
+imdb,q4a,rdb_wo_post_join_info,title,564,13328
+imdb,q4a,Single Table,,740,19363
+imdb,q4b,rdb_w_post_join_info,movie_info_idx,5,35
+imdb,q4b,rdb_w_post_join_info,title,5,97
+imdb,q4b,rdb_wo_post_join_info,movie_info_idx,4,12
+imdb,q4b,rdb_wo_post_join_info,title,5,77
+imdb,q4b,Single Table,,6,106
+imdb,q4c,rdb_w_post_join_info,movie_info_idx,3767,26369
+imdb,q4c,rdb_w_post_join_info,title,3767,104476
+imdb,q4c,rdb_wo_post_join_info,movie_info_idx,77,231
+imdb,q4c,rdb_wo_post_join_info,title,3762,89329
+imdb,q4c,Single Table,,4700,126319
+imdb,q5a,rdb_w_post_join_info,title,0,0
+imdb,q5a,rdb_wo_post_join_info,title,0,0
+imdb,q5a,Single Table,,0,0
+imdb,q5b,rdb_w_post_join_info,title,0,0
+imdb,q5b,rdb_wo_post_join_info,title,0,0
+imdb,q5b,Single Table,,0,0
+imdb,q5c,rdb_w_post_join_info,title,633,11485
+imdb,q5c,rdb_wo_post_join_info,title,633,11485
+imdb,q5c,Single Table,,669,12033
+imdb,q6a,rdb_w_post_join_info,cast_info,4,32
+imdb,q6a,rdb_w_post_join_info,keyword,1,29
+imdb,q6a,rdb_w_post_join_info,movie_keyword,4,32
+imdb,q6a,rdb_w_post_join_info,name,1,22
+imdb,q6a,rdb_w_post_join_info,title,4,83
+imdb,q6a,rdb_wo_post_join_info,keyword,1,25
+imdb,q6a,rdb_wo_post_join_info,name,1,18
+imdb,q6a,rdb_wo_post_join_info,title,4,67
+imdb,q6a,Single Table,,6,351
+imdb,q6b,rdb_w_post_join_info,cast_info,1,8
+imdb,q6b,rdb_w_post_join_info,keyword,5,73
+imdb,q6b,rdb_w_post_join_info,movie_keyword,5,40
+imdb,q6b,rdb_w_post_join_info,name,1,22
+imdb,q6b,rdb_w_post_join_info,title,1,18
+imdb,q6b,rdb_wo_post_join_info,keyword,5,53
+imdb,q6b,rdb_wo_post_join_info,name,1,18
+imdb,q6b,rdb_wo_post_join_info,title,1,14
+imdb,q6b,Single Table,,12,508
+imdb,q6c,rdb_w_post_join_info,cast_info,1,8
+imdb,q6c,rdb_w_post_join_info,keyword,1,29
+imdb,q6c,rdb_w_post_join_info,movie_keyword,1,8
+imdb,q6c,rdb_w_post_join_info,name,1,22
+imdb,q6c,rdb_w_post_join_info,title,1,18
+imdb,q6c,rdb_wo_post_join_info,keyword,1,25
+imdb,q6c,rdb_wo_post_join_info,name,1,18
+imdb,q6c,rdb_wo_post_join_info,title,1,14
+imdb,q6c,Single Table,,2,114
+imdb,q6d,rdb_w_post_join_info,cast_info,37,296
+imdb,q6d,rdb_w_post_join_info,keyword,8,108
+imdb,q6d,rdb_w_post_join_info,movie_keyword,69,552
+imdb,q6d,rdb_w_post_join_info,name,2,44
+imdb,q6d,rdb_w_post_join_info,title,37,1096
+imdb,q6d,rdb_wo_post_join_info,keyword,8,76
+imdb,q6d,rdb_wo_post_join_info,name,2,36
+imdb,q6d,rdb_wo_post_join_info,title,36,940
+imdb,q6d,Single Table,,88,4133
+imdb,q6e,rdb_w_post_join_info,cast_info,4,32
+imdb,q6e,rdb_w_post_join_info,keyword,1,29
+imdb,q6e,rdb_w_post_join_info,movie_keyword,4,32
+imdb,q6e,rdb_w_post_join_info,name,1,22
+imdb,q6e,rdb_w_post_join_info,title,4,83
+imdb,q6e,rdb_wo_post_join_info,keyword,1,25
+imdb,q6e,rdb_wo_post_join_info,name,1,18
+imdb,q6e,rdb_wo_post_join_info,title,4,67
+imdb,q6e,Single Table,,6,351
+imdb,q6f,rdb_w_post_join_info,cast_info,542360,4338880
+imdb,q6f,rdb_w_post_join_info,keyword,8,108
+imdb,q6f,rdb_w_post_join_info,movie_keyword,13983,111864
+imdb,q6f,rdb_w_post_join_info,name,285237,5258563
+imdb,q6f,rdb_w_post_join_info,title,11735,278602
+imdb,q6f,rdb_wo_post_join_info,keyword,8,76
+imdb,q6f,rdb_wo_post_join_info,name,276330,4004006
+imdb,q6f,rdb_wo_post_join_info,title,11347,224522
+imdb,q6f,Single Table,,785477,31962850
+imdb,q7a,rdb_w_post_join_info,cast_info,7,56
+imdb,q7a,rdb_w_post_join_info,name,3,64
+imdb,q7a,rdb_w_post_join_info,title,7,160
+imdb,q7a,rdb_wo_post_join_info,name,3,52
+imdb,q7a,rdb_wo_post_join_info,title,7,132
+imdb,q7a,Single Table,,32,984
+imdb,q7b,rdb_w_post_join_info,cast_info,2,16
+imdb,q7b,rdb_w_post_join_info,name,1,19
+imdb,q7b,rdb_w_post_join_info,title,2,31
+imdb,q7b,rdb_wo_post_join_info,name,1,15
+imdb,q7b,rdb_wo_post_join_info,title,2,23
+imdb,q7b,Single Table,,16,396
+imdb,q7c,rdb_w_post_join_info,name,2422,44337
+imdb,q7c,rdb_w_post_join_info,person_info,2561,4468113
+imdb,q7c,rdb_wo_post_join_info,name,2415,34561
+imdb,q7c,rdb_wo_post_join_info,person_info,2561,4457869
+imdb,q7c,Single Table,,68185,149518298
+imdb,q8a,rdb_w_post_join_info,aka_name,6,129
+imdb,q8a,rdb_w_post_join_info,cast_info,23,184
+imdb,q8a,rdb_w_post_join_info,title,23,681
+imdb,q8a,rdb_wo_post_join_info,aka_name,6,105
+imdb,q8a,rdb_wo_post_join_info,title,23,589
+imdb,q8a,Single Table,,62,2568
+imdb,q8b,rdb_w_post_join_info,aka_name,3,64
+imdb,q8b,rdb_w_post_join_info,cast_info,3,24
+imdb,q8b,rdb_w_post_join_info,title,3,146
+imdb,q8b,rdb_wo_post_join_info,aka_name,3,52
+imdb,q8b,rdb_wo_post_join_info,title,3,134
+imdb,q8b,Single Table,,6,433
+imdb,q8c,rdb_w_post_join_info,aka_name,78607,1544983
+imdb,q8c,rdb_w_post_join_info,cast_info,395577,3164616
+imdb,q8c,rdb_w_post_join_info,title,233786,5023622
+imdb,q8c,rdb_wo_post_join_info,aka_name,75145,1202103
+imdb,q8c,rdb_wo_post_join_info,title,189406,3566748
+imdb,q8c,Single Table,,2487611,86037644
+imdb,q8d,rdb_w_post_join_info,aka_name,7903,154640
+imdb,q8d,rdb_w_post_join_info,cast_info,53719,429752
+imdb,q8d,rdb_w_post_join_info,title,51572,1049505
+imdb,q8d,rdb_wo_post_join_info,aka_name,7850,122534
+imdb,q8d,rdb_wo_post_join_info,title,44517,768565
+imdb,q8d,Single Table,,323005,10402291
+imdb,q9a,rdb_w_post_join_info,aka_name,30,597
+imdb,q9a,rdb_w_post_join_info,cast_info,30,360
+imdb,q9a,rdb_w_post_join_info,char_name,25,410
+imdb,q9a,rdb_w_post_join_info,title,28,613
+imdb,q9a,rdb_wo_post_join_info,aka_name,27,463
+imdb,q9a,rdb_wo_post_join_info,char_name,25,310
+imdb,q9a,rdb_wo_post_join_info,title,28,501
+imdb,q9a,Single Table,,121,5243
+imdb,q9b,rdb_w_post_join_info,aka_name,13,254
+imdb,q9b,rdb_w_post_join_info,cast_info,13,156
+imdb,q9b,rdb_w_post_join_info,char_name,11,183
+imdb,q9b,rdb_w_post_join_info,name,7,135
+imdb,q9b,rdb_w_post_join_info,title,12,261
+imdb,q9b,rdb_wo_post_join_info,aka_name,12,197
+imdb,q9b,rdb_wo_post_join_info,char_name,11,139
+imdb,q9b,rdb_wo_post_join_info,name,7,107
+imdb,q9b,rdb_wo_post_join_info,title,12,213
+imdb,q9b,Single Table,,40,2316
+imdb,q9c,rdb_w_post_join_info,aka_name,412,8198
+imdb,q9c,rdb_w_post_join_info,cast_info,1138,13656
+imdb,q9c,rdb_w_post_join_info,char_name,567,8739
+imdb,q9c,rdb_w_post_join_info,name,215,3954
+imdb,q9c,rdb_w_post_join_info,title,919,23895
+imdb,q9c,rdb_wo_post_join_info,aka_name,397,6420
+imdb,q9c,rdb_wo_post_join_info,char_name,567,6471
+imdb,q9c,rdb_wo_post_join_info,name,215,3094
+imdb,q9c,rdb_wo_post_join_info,title,916,20156
+imdb,q9c,Single Table,,8144,509505
+imdb,q9d,rdb_w_post_join_info,aka_name,9486,187103
+imdb,q9d,rdb_w_post_join_info,cast_info,50065,600780
+imdb,q9d,rdb_w_post_join_info,char_name,15956,257257
+imdb,q9d,rdb_w_post_join_info,name,4916,90489
+imdb,q9d,rdb_w_post_join_info,title,16851,438290
+imdb,q9d,rdb_wo_post_join_info,aka_name,9235,147333
+imdb,q9d,rdb_wo_post_join_info,char_name,15943,193318
+imdb,q9d,rdb_wo_post_join_info,name,4915,70809
+imdb,q9d,rdb_wo_post_join_info,title,16503,366333
+imdb,q9d,Single Table,,483082,31978394
+imdb,q10a,rdb_w_post_join_info,cast_info,67,536
+imdb,q10a,rdb_w_post_join_info,char_name,62,1095
+imdb,q10a,rdb_w_post_join_info,title,54,1093
+imdb,q10a,rdb_wo_post_join_info,char_name,62,847
+imdb,q10a,rdb_wo_post_join_info,title,54,877
+imdb,q10a,Single Table,,104,3046
+imdb,q10b,rdb_w_post_join_info,cast_info,0,0
+imdb,q10b,rdb_w_post_join_info,char_name,0,0
+imdb,q10b,rdb_w_post_join_info,title,0,0
+imdb,q10b,rdb_wo_post_join_info,char_name,0,0
+imdb,q10b,rdb_wo_post_join_info,title,0,0
+imdb,q10b,Single Table,,0,0
+imdb,q10c,rdb_w_post_join_info,cast_info,6,48
+imdb,q10c,rdb_w_post_join_info,char_name,1,11
+imdb,q10c,rdb_w_post_join_info,title,6,216
+imdb,q10c,rdb_wo_post_join_info,char_name,1,7
+imdb,q10c,rdb_wo_post_join_info,title,6,192
+imdb,q10c,Single Table,,10,377
+imdb,q11a,rdb_w_post_join_info,company_name,10,210
+imdb,q11a,rdb_wo_post_join_info,company_name,10,210
+imdb,q11a,Single Table,,310,8001
+imdb,q11b,rdb_w_post_join_info,company_name,2,57
+imdb,q11b,rdb_wo_post_join_info,company_name,2,57
+imdb,q11b,Single Table,,14,399
+imdb,q11c,rdb_w_post_join_info,company_name,5,191
+imdb,q11c,rdb_wo_post_join_info,company_name,5,191
+imdb,q11c,Single Table,,6946,274282
+imdb,q11d,rdb_w_post_join_info,company_name,210,3686
+imdb,q11d,rdb_wo_post_join_info,company_name,210,3686
+imdb,q11d,Single Table,,14899,403473
+imdb,q12a,rdb_w_post_join_info,company_name,347,8379
+imdb,q12a,rdb_w_post_join_info,movie_companies,384,3072
+imdb,q12a,rdb_w_post_join_info,movie_info_idx,268,1876
+imdb,q12a,rdb_w_post_join_info,title,268,4688
+imdb,q12a,rdb_wo_post_join_info,company_name,347,6991
+imdb,q12a,rdb_wo_post_join_info,movie_info_idx,12,36
+imdb,q12a,rdb_wo_post_join_info,title,267,3611
+imdb,q12a,Single Table,,397,14800
+imdb,q12b,rdb_w_post_join_info,movie_info,2,26
+imdb,q12b,rdb_w_post_join_info,title,2,48
+imdb,q12b,rdb_wo_post_join_info,movie_info,2,18
+imdb,q12b,rdb_wo_post_join_info,title,2,40
+imdb,q12b,Single Table,,10,282
+imdb,q12c,rdb_w_post_join_info,company_name,2818,65964
+imdb,q12c,rdb_w_post_join_info,movie_companies,4433,35464
+imdb,q12c,rdb_w_post_join_info,movie_info_idx,2609,18263
+imdb,q12c,rdb_w_post_join_info,title,2609,48877
+imdb,q12c,rdb_wo_post_join_info,company_name,2818,54692
+imdb,q12c,rdb_wo_post_join_info,movie_info_idx,26,78
+imdb,q12c,rdb_wo_post_join_info,title,2556,38005
+imdb,q12c,Single Table,,4711,177298
+imdb,q13a,rdb_w_post_join_info,movie_info,63141,1627194
+imdb,q13a,rdb_w_post_join_info,movie_info_idx,9718,68026
+imdb,q13a,rdb_w_post_join_info,title,9718,218436
+imdb,q13a,rdb_wo_post_join_info,movie_info,44546,973802
+imdb,q13a,rdb_wo_post_join_info,movie_info_idx,80,240
+imdb,q13a,rdb_wo_post_join_info,title,9537,177027
+imdb,q13a,Single Table,,111101,4593447
+imdb,q13b,rdb_w_post_join_info,company_name,55,1292
+imdb,q13b,rdb_w_post_join_info,movie_companies,57,456
+imdb,q13b,rdb_w_post_join_info,movie_info_idx,35,245
+imdb,q13b,rdb_w_post_join_info,title,35,861
+imdb,q13b,rdb_wo_post_join_info,company_name,55,1072
+imdb,q13b,rdb_wo_post_join_info,movie_info_idx,25,75
+imdb,q13b,rdb_wo_post_join_info,title,33,703
+imdb,q13b,Single Table,,372,13231
+imdb,q13c,rdb_w_post_join_info,company_name,14,320
+imdb,q13c,rdb_w_post_join_info,movie_companies,14,112
+imdb,q13c,rdb_w_post_join_info,movie_info_idx,9,63
+imdb,q13c,rdb_w_post_join_info,title,9,161
+imdb,q13c,rdb_wo_post_join_info,company_name,14,264
+imdb,q13c,rdb_wo_post_join_info,movie_info_idx,9,27
+imdb,q13c,rdb_wo_post_join_info,title,8,117
+imdb,q13c,Single Table,,53,1688
+imdb,q13d,rdb_w_post_join_info,company_name,28180,658386
+imdb,q13d,rdb_w_post_join_info,movie_companies,80844,646752
+imdb,q13d,rdb_w_post_join_info,movie_info_idx,59289,415024
+imdb,q13d,rdb_w_post_join_info,title,59289,1219146
+imdb,q13d,rdb_wo_post_join_info,company_name,28180,545666
+imdb,q13d,rdb_wo_post_join_info,movie_info_idx,87,262
+imdb,q13d,rdb_wo_post_join_info,title,54636,929332
+imdb,q13d,Single Table,,670390,25577551
+imdb,q14a,rdb_w_post_join_info,movie_info_idx,483,3381
+imdb,q14a,rdb_w_post_join_info,title,483,9193
+imdb,q14a,rdb_wo_post_join_info,movie_info_idx,71,213
+imdb,q14a,rdb_wo_post_join_info,title,482,7255
+imdb,q14a,Single Table,,761,13834
+imdb,q14b,rdb_w_post_join_info,movie_info_idx,1,7
+imdb,q14b,rdb_w_post_join_info,title,1,23
+imdb,q14b,rdb_wo_post_join_info,movie_info_idx,1,3
+imdb,q14b,rdb_wo_post_join_info,title,1,19
+imdb,q14b,Single Table,,1,22
+imdb,q14c,rdb_w_post_join_info,movie_info_idx,2527,17689
+imdb,q14c,rdb_w_post_join_info,title,2527,47218
+imdb,q14c,rdb_wo_post_join_info,movie_info_idx,75,225
+imdb,q14c,rdb_wo_post_join_info,title,2489,36832
+imdb,q14c,Single Table,,4115,72982
+imdb,q15a,rdb_w_post_join_info,movie_info,16,358
+imdb,q15a,rdb_w_post_join_info,title,14,370
+imdb,q15a,rdb_wo_post_join_info,movie_info,15,276
+imdb,q15a,rdb_wo_post_join_info,title,14,314
+imdb,q15a,Single Table,,328,11489
+imdb,q15b,rdb_w_post_join_info,movie_info,2,43
+imdb,q15b,rdb_w_post_join_info,title,2,45
+imdb,q15b,rdb_wo_post_join_info,movie_info,2,35
+imdb,q15b,rdb_wo_post_join_info,title,2,37
+imdb,q15b,Single Table,,37,1413
+imdb,q15c,rdb_w_post_join_info,movie_info,53,1146
+imdb,q15c,rdb_w_post_join_info,title,50,1225
+imdb,q15c,rdb_wo_post_join_info,movie_info,51,901
+imdb,q15c,rdb_wo_post_join_info,title,50,1025
+imdb,q15c,Single Table,,2271,78280
+imdb,q15d,rdb_w_post_join_info,aka_title,207,5136
+imdb,q15d,rdb_w_post_join_info,title,148,3387
+imdb,q15d,rdb_wo_post_join_info,aka_title,207,4308
+imdb,q15d,rdb_wo_post_join_info,title,148,2795
+imdb,q15d,Single Table,,11347,471902
+imdb,q16a,rdb_w_post_join_info,aka_name,173,3468
+imdb,q16a,rdb_w_post_join_info,cast_info,118,944
+imdb,q16a,rdb_w_post_join_info,title,16,454
+imdb,q16a,rdb_wo_post_join_info,aka_name,173,2776
+imdb,q16a,rdb_wo_post_join_info,title,16,390
+imdb,q16a,Single Table,,385,15537
+imdb,q16b,rdb_w_post_join_info,aka_name,223903,4410930
+imdb,q16b,rdb_w_post_join_info,cast_info,380357,3042856
+imdb,q16b,rdb_w_post_join_info,title,23622,620254
+imdb,q16b,rdb_wo_post_join_info,aka_name,212140,3410103
+imdb,q16b,rdb_wo_post_join_info,title,21955,503613
+imdb,q16b,Single Table,,3710592,133505762
+imdb,q16c,rdb_w_post_join_info,aka_name,32471,654109
+imdb,q16c,rdb_w_post_join_info,cast_info,56651,453208
+imdb,q16c,rdb_w_post_join_info,title,3845,102780
+imdb,q16c,rdb_wo_post_join_info,aka_name,31382,514742
+imdb,q16c,rdb_wo_post_join_info,title,3757,86155
+imdb,q16c,Single Table,,319932,12291469
+imdb,q16d,rdb_w_post_join_info,aka_name,26774,539072
+imdb,q16d,rdb_w_post_join_info,cast_info,44430,355440
+imdb,q16d,rdb_w_post_join_info,title,3063,81586
+imdb,q16d,rdb_wo_post_join_info,aka_name,25932,424930
+imdb,q16d,rdb_wo_post_join_info,title,3007,68520
+imdb,q16d,Single Table,,249455,9528662
+imdb,q17a,rdb_w_post_join_info,name,27434,394165
+imdb,q17a,rdb_wo_post_join_info,name,27434,394165
+imdb,q17a,Single Table,,258289,3655457
+imdb,q17b,rdb_w_post_join_info,name,3100,44526
+imdb,q17b,rdb_wo_post_join_info,name,3100,44526
+imdb,q17b,Single Table,,52306,751628
+imdb,q17c,rdb_w_post_join_info,name,146,1892
+imdb,q17c,rdb_wo_post_join_info,name,146,1892
+imdb,q17c,Single Table,,1918,23960
+imdb,q17d,rdb_w_post_join_info,name,668,10114
+imdb,q17d,rdb_wo_post_join_info,name,668,10114
+imdb,q17d,Single Table,,11538,170524
+imdb,q17e,rdb_w_post_join_info,name,308793,4456586
+imdb,q17e,rdb_wo_post_join_info,name,308793,4456586
+imdb,q17e,Single Table,,2832555,40348262
+imdb,q17f,rdb_w_post_join_info,name,56347,822567
+imdb,q17f,rdb_wo_post_join_info,name,56347,822567
+imdb,q17f,Single Table,,1113120,16089940
+imdb,q18a,rdb_w_post_join_info,movie_info,394,5227
+imdb,q18a,rdb_w_post_join_info,movie_info_idx,394,2851
+imdb,q18a,rdb_w_post_join_info,title,394,8108
+imdb,q18a,rdb_wo_post_join_info,movie_info,204,1945
+imdb,q18a,rdb_wo_post_join_info,movie_info_idx,289,1097
+imdb,q18a,rdb_wo_post_join_info,title,394,6532
+imdb,q18a,Single Table,,410,11890
+imdb,q18b,rdb_w_post_join_info,movie_info,10,116
+imdb,q18b,rdb_w_post_join_info,movie_info_idx,8,56
+imdb,q18b,rdb_w_post_join_info,title,8,135
+imdb,q18b,rdb_wo_post_join_info,movie_info,2,14
+imdb,q18b,rdb_wo_post_join_info,movie_info_idx,6,18
+imdb,q18b,rdb_wo_post_join_info,title,8,103
+imdb,q18b,Single Table,,11,260
+imdb,q18c,rdb_w_post_join_info,movie_info,22333,226289
+imdb,q18c,rdb_w_post_join_info,movie_info_idx,15556,104911
+imdb,q18c,rdb_w_post_join_info,title,15556,311554
+imdb,q18c,rdb_wo_post_join_info,movie_info,6,34
+imdb,q18c,rdb_wo_post_join_info,movie_info_idx,4004,16541
+imdb,q18c,rdb_wo_post_join_info,title,15078,244508
+imdb,q18c,Single Table,,28073,703332
+imdb,q19a,rdb_w_post_join_info,cast_info,20,160
+imdb,q19a,rdb_w_post_join_info,name,12,228
+imdb,q19a,rdb_w_post_join_info,title,20,429
+imdb,q19a,rdb_wo_post_join_info,name,12,180
+imdb,q19a,rdb_wo_post_join_info,title,20,349
+imdb,q19a,Single Table,,184,5544
+imdb,q19b,rdb_w_post_join_info,cast_info,1,8
+imdb,q19b,rdb_w_post_join_info,name,1,19
+imdb,q19b,rdb_w_post_join_info,title,1,17
+imdb,q19b,rdb_wo_post_join_info,name,1,15
+imdb,q19b,rdb_wo_post_join_info,title,1,13
+imdb,q19b,Single Table,,15,420
+imdb,q19c,rdb_w_post_join_info,cast_info,295,2360
+imdb,q19c,rdb_w_post_join_info,name,91,1659
+imdb,q19c,rdb_w_post_join_info,title,287,7937
+imdb,q19c,rdb_wo_post_join_info,name,91,1295
+imdb,q19c,rdb_wo_post_join_info,title,286,6756
+imdb,q19c,Single Table,,3575,127562
+imdb,q19d,rdb_w_post_join_info,cast_info,21131,169048
+imdb,q19d,rdb_w_post_join_info,name,3203,59184
+imdb,q19d,rdb_w_post_join_info,title,7635,200591
+imdb,q19d,rdb_wo_post_join_info,name,3203,46372
+imdb,q19d,rdb_wo_post_join_info,title,7536,168685
+imdb,q19d,Single Table,,1760645,60181339
+imdb,q20a,rdb_w_post_join_info,title,4,51
+imdb,q20a,rdb_wo_post_join_info,title,4,51
+imdb,q20a,Single Table,,33,354
+imdb,q20b,rdb_w_post_join_info,title,3,37
+imdb,q20b,rdb_wo_post_join_info,title,3,37
+imdb,q20b,Single Table,,17,190
+imdb,q20c,rdb_w_post_join_info,cast_info,3594,28752
+imdb,q20c,rdb_w_post_join_info,name,3451,63770
+imdb,q20c,rdb_w_post_join_info,title,765,13921
+imdb,q20c,rdb_wo_post_join_info,name,3449,49944
+imdb,q20c,rdb_wo_post_join_info,title,761,10827
+imdb,q20c,Single Table,,5406,155995
+imdb,q21a,rdb_w_post_join_info,company_name,7,178
+imdb,q21a,rdb_w_post_join_info,link_type,2,26
+imdb,q21a,rdb_w_post_join_info,movie_companies,18,144
+imdb,q21a,rdb_w_post_join_info,movie_link,14,112
+imdb,q21a,rdb_w_post_join_info,title,8,162
+imdb,q21a,rdb_wo_post_join_info,company_name,7,150
+imdb,q21a,rdb_wo_post_join_info,link_type,2,18
+imdb,q21a,rdb_wo_post_join_info,title,8,130
+imdb,q21a,Single Table,,1410,69691
+imdb,q21b,rdb_w_post_join_info,company_name,2,58
+imdb,q21b,rdb_w_post_join_info,link_type,2,26
+imdb,q21b,rdb_w_post_join_info,movie_companies,2,16
+imdb,q21b,rdb_w_post_join_info,movie_link,2,16
+imdb,q21b,rdb_w_post_join_info,title,1,17
+imdb,q21b,rdb_wo_post_join_info,company_name,2,50
+imdb,q21b,rdb_wo_post_join_info,link_type,2,18
+imdb,q21b,rdb_wo_post_join_info,title,1,13
+imdb,q21b,Single Table,,38,1798
+imdb,q21c,rdb_w_post_join_info,company_name,12,305
+imdb,q21c,rdb_w_post_join_info,link_type,2,26
+imdb,q21c,rdb_w_post_join_info,movie_companies,26,208
+imdb,q21c,rdb_w_post_join_info,movie_link,21,168
+imdb,q21c,rdb_w_post_join_info,title,12,230
+imdb,q21c,rdb_wo_post_join_info,company_name,12,257
+imdb,q21c,rdb_wo_post_join_info,link_type,2,18
+imdb,q21c,rdb_wo_post_join_info,title,12,182
+imdb,q21c,Single Table,,1874,91298
+imdb,q22a,rdb_w_post_join_info,company_name,487,11472
+imdb,q22a,rdb_w_post_join_info,movie_companies,1159,9272
+imdb,q22a,rdb_w_post_join_info,movie_info_idx,152,1064
+imdb,q22a,rdb_w_post_join_info,title,152,2800
+imdb,q22a,rdb_wo_post_join_info,company_name,375,6965
+imdb,q22a,rdb_wo_post_join_info,movie_info_idx,41,123
+imdb,q22a,rdb_wo_post_join_info,title,152,2192
+imdb,q22a,Single Table,,2851,107680
+imdb,q22b,rdb_w_post_join_info,company_name,13,325
+imdb,q22b,rdb_w_post_join_info,movie_companies,13,104
+imdb,q22b,rdb_w_post_join_info,movie_info_idx,11,77
+imdb,q22b,rdb_w_post_join_info,title,11,206
+imdb,q22b,rdb_wo_post_join_info,company_name,13,273
+imdb,q22b,rdb_wo_post_join_info,movie_info_idx,10,30
+imdb,q22b,rdb_wo_post_join_info,title,11,162
+imdb,q22b,Single Table,,31,1259
+imdb,q22c,rdb_w_post_join_info,company_name,1401,31352
+imdb,q22c,rdb_w_post_join_info,movie_companies,8704,69632
+imdb,q22c,rdb_w_post_join_info,movie_info_idx,969,6783
+imdb,q22c,rdb_w_post_join_info,title,969,17855
+imdb,q22c,rdb_wo_post_join_info,company_name,1165,20208
+imdb,q22c,rdb_wo_post_join_info,movie_info_idx,63,189
+imdb,q22c,rdb_wo_post_join_info,title,961,13938
+imdb,q22c,Single Table,,21489,802268
+imdb,q22d,rdb_w_post_join_info,company_name,3244,72711
+imdb,q22d,rdb_w_post_join_info,movie_companies,19297,154376
+imdb,q22d,rdb_w_post_join_info,movie_info_idx,1722,12054
+imdb,q22d,rdb_w_post_join_info,title,1722,31379
+imdb,q22d,rdb_wo_post_join_info,company_name,2881,51480
+imdb,q22d,rdb_wo_post_join_info,movie_info_idx,68,204
+imdb,q22d,rdb_wo_post_join_info,title,1702,24372
+imdb,q22d,Single Table,,46281,1704888
+imdb,q23a,rdb_w_post_join_info,kind_type,1,9
+imdb,q23a,rdb_w_post_join_info,title,2,32
+imdb,q23a,rdb_wo_post_join_info,kind_type,1,5
+imdb,q23a,rdb_wo_post_join_info,title,2,24
+imdb,q23a,Single Table,,618,10506
+imdb,q23b,rdb_w_post_join_info,kind_type,1,9
+imdb,q23b,rdb_w_post_join_info,title,1,16
+imdb,q23b,rdb_wo_post_join_info,kind_type,1,5
+imdb,q23b,rdb_wo_post_join_info,title,1,12
+imdb,q23b,Single Table,,16,272
+imdb,q23c,rdb_w_post_join_info,kind_type,1,9
+imdb,q23c,rdb_w_post_join_info,title,3,49
+imdb,q23c,rdb_wo_post_join_info,kind_type,1,5
+imdb,q23c,rdb_wo_post_join_info,title,3,37
+imdb,q23c,Single Table,,628,10686
+imdb,q24a,rdb_w_post_join_info,cast_info,6,72
+imdb,q24a,rdb_w_post_join_info,char_name,4,59
+imdb,q24a,rdb_w_post_join_info,name,4,70
+imdb,q24a,rdb_w_post_join_info,title,6,135
+imdb,q24a,rdb_wo_post_join_info,char_name,4,43
+imdb,q24a,rdb_wo_post_join_info,name,4,54
+imdb,q24a,rdb_wo_post_join_info,title,6,111
+imdb,q24a,Single Table,,275,10323
+imdb,q24b,rdb_w_post_join_info,cast_info,3,36
+imdb,q24b,rdb_w_post_join_info,char_name,1,11
+imdb,q24b,rdb_w_post_join_info,name,1,19
+imdb,q24b,rdb_w_post_join_info,title,3,79
+imdb,q24b,rdb_wo_post_join_info,char_name,1,7
+imdb,q24b,rdb_wo_post_join_info,name,1,15
+imdb,q24b,rdb_wo_post_join_info,title,3,67
+imdb,q24b,Single Table,,45,1885
+imdb,q25a,rdb_w_post_join_info,cast_info,2071,16568
+imdb,q25a,rdb_w_post_join_info,movie_info,1679,16790
+imdb,q25a,rdb_w_post_join_info,movie_info_idx,1679,12304
+imdb,q25a,rdb_w_post_join_info,name,1586,29097
+imdb,q25a,rdb_w_post_join_info,title,1679,33590
+imdb,q25a,rdb_wo_post_join_info,movie_info,1,6
+imdb,q25a,rdb_wo_post_join_info,movie_info_idx,1185,4396
+imdb,q25a,rdb_wo_post_join_info,name,1586,22753
+imdb,q25a,rdb_wo_post_join_info,title,1658,26654
+imdb,q25a,Single Table,,4407,175468
+imdb,q25b,rdb_w_post_join_info,cast_info,3,24
+imdb,q25b,rdb_w_post_join_info,movie_info,3,30
+imdb,q25b,rdb_w_post_join_info,movie_info_idx,3,20
+imdb,q25b,rdb_w_post_join_info,name,2,39
+imdb,q25b,rdb_w_post_join_info,title,3,71
+imdb,q25b,rdb_wo_post_join_info,movie_info,1,6
+imdb,q25b,rdb_wo_post_join_info,movie_info_idx,3,8
+imdb,q25b,rdb_wo_post_join_info,name,2,31
+imdb,q25b,rdb_wo_post_join_info,title,3,59
+imdb,q25b,Single Table,,6,258
+imdb,q25c,rdb_w_post_join_info,cast_info,6960,55680
+imdb,q25c,rdb_w_post_join_info,movie_info,9053,93029
+imdb,q25c,rdb_w_post_join_info,movie_info_idx,5560,41310
+imdb,q25c,rdb_w_post_join_info,name,4548,83319
+imdb,q25c,rdb_w_post_join_info,title,5560,109093
+imdb,q25c,rdb_wo_post_join_info,movie_info,6,34
+imdb,q25c,rdb_wo_post_join_info,movie_info_idx,3070,12685
+imdb,q25c,rdb_wo_post_join_info,name,4546,65097
+imdb,q25c,rdb_wo_post_join_info,title,5458,85768
+imdb,q25c,Single Table,,26153,1045169
+imdb,q26a,rdb_w_post_join_info,cast_info,1019,12228
+imdb,q26a,rdb_w_post_join_info,char_name,810,16595
+imdb,q26a,rdb_w_post_join_info,movie_info_idx,187,1309
+imdb,q26a,rdb_w_post_join_info,name,991,18454
+imdb,q26a,rdb_w_post_join_info,title,187,3495
+imdb,q26a,rdb_wo_post_join_info,char_name,810,13355
+imdb,q26a,rdb_wo_post_join_info,movie_info_idx,18,54
+imdb,q26a,rdb_wo_post_join_info,name,991,14490
+
+imdb,q26a,rdb_wo_post_join_info,title,187,2747
+imdb,q26a,Single Table,,1728,80928
+imdb,q26b,rdb_w_post_join_info,cast_info,40,320
+imdb,q26b,rdb_w_post_join_info,char_name,38,726
+imdb,q26b,rdb_w_post_join_info,movie_info_idx,4,28
+imdb,q26b,rdb_w_post_join_info,title,4,65
+imdb,q26b,rdb_wo_post_join_info,char_name,38,574
+imdb,q26b,rdb_wo_post_join_info,movie_info_idx,4,12
+imdb,q26b,rdb_wo_post_join_info,title,4,49
+imdb,q26b,Single Table,,93,2924
+imdb,q26c,rdb_w_post_join_info,cast_info,3196,25568
+imdb,q26c,rdb_w_post_join_info,char_name,2524,50878
+imdb,q26c,rdb_w_post_join_info,movie_info_idx,762,5334
+imdb,q26c,rdb_w_post_join_info,title,762,13863
+imdb,q26c,rdb_wo_post_join_info,char_name,2524,40782
+imdb,q26c,rdb_wo_post_join_info,movie_info_idx,65,195
+imdb,q26c,rdb_wo_post_join_info,title,758,10781
+imdb,q26c,Single Table,,5400,174003
+imdb,q27a,rdb_w_post_join_info,company_name,6,161
+imdb,q27a,rdb_w_post_join_info,link_type,2,26
+imdb,q27a,rdb_w_post_join_info,movie_companies,10,80
+imdb,q27a,rdb_w_post_join_info,movie_link,7,56
+imdb,q27a,rdb_w_post_join_info,title,4,71
+imdb,q27a,rdb_wo_post_join_info,company_name,6,137
+imdb,q27a,rdb_wo_post_join_info,link_type,2,18
+imdb,q27a,rdb_wo_post_join_info,title,4,55
+imdb,q27a,Single Table,,477,23043
+imdb,q27b,rdb_w_post_join_info,company_name,4,119
+imdb,q27b,rdb_w_post_join_info,link_type,2,26
+imdb,q27b,rdb_w_post_join_info,movie_companies,5,40
+imdb,q27b,rdb_w_post_join_info,movie_link,4,32
+imdb,q27b,rdb_w_post_join_info,title,2,30
+imdb,q27b,rdb_wo_post_join_info,company_name,4,103
+imdb,q27b,rdb_wo_post_join_info,link_type,2,18
+imdb,q27b,rdb_wo_post_join_info,title,2,22
+imdb,q27b,Single Table,,247,11664
+imdb,q27c,rdb_w_post_join_info,company_name,6,161
+imdb,q27c,rdb_w_post_join_info,link_type,2,26
+imdb,q27c,rdb_w_post_join_info,movie_companies,10,80
+imdb,q27c,rdb_w_post_join_info,movie_link,7,56
+imdb,q27c,rdb_w_post_join_info,title,4,71
+imdb,q27c,rdb_wo_post_join_info,company_name,6,137
+imdb,q27c,rdb_wo_post_join_info,link_type,2,18
+imdb,q27c,rdb_wo_post_join_info,title,4,55
+imdb,q27c,Single Table,,743,36025
+imdb,q28a,rdb_w_post_join_info,company_name,623,14523
+imdb,q28a,rdb_w_post_join_info,movie_companies,1776,14208
+imdb,q28a,rdb_w_post_join_info,movie_info_idx,167,1169
+imdb,q28a,rdb_w_post_join_info,title,167,3101
+imdb,q28a,rdb_wo_post_join_info,company_name,510,9222
+imdb,q28a,rdb_wo_post_join_info,movie_info_idx,38,114
+imdb,q28a,rdb_wo_post_join_info,title,164,2418
+imdb,q28a,Single Table,,4803,171744
+imdb,q28b,rdb_w_post_join_info,company_name,67,1562
+imdb,q28b,rdb_w_post_join_info,movie_companies,70,560
+imdb,q28b,rdb_w_post_join_info,movie_info_idx,6,42
+imdb,q28b,rdb_w_post_join_info,title,6,112
+imdb,q28b,rdb_wo_post_join_info,company_name,46,839
+imdb,q28b,rdb_wo_post_join_info,movie_info_idx,6,18
+imdb,q28b,rdb_wo_post_join_info,title,6,88
+imdb,q28b,Single Table,,148,4897
+imdb,q28c,rdb_w_post_join_info,company_name,842,19695
+imdb,q28c,rdb_w_post_join_info,movie_companies,3470,27760
+imdb,q28c,rdb_w_post_join_info,movie_info_idx,282,1974
+imdb,q28c,rdb_w_post_join_info,title,282,5175
+imdb,q28c,rdb_wo_post_join_info,company_name,655,11664
+imdb,q28c,rdb_wo_post_join_info,movie_info_idx,48,144
+imdb,q28c,rdb_wo_post_join_info,title,279,4032
+imdb,q28c,Single Table,,8373,318114
+imdb,q29a,rdb_w_post_join_info,cast_info,1,12
+imdb,q29a,rdb_w_post_join_info,char_name,1,9
+imdb,q29a,rdb_w_post_join_info,name,1,18
+imdb,q29a,rdb_w_post_join_info,title,1,11
+imdb,q29a,rdb_wo_post_join_info,char_name,1,5
+imdb,q29a,rdb_wo_post_join_info,name,1,14
+imdb,q29a,rdb_wo_post_join_info,title,1,7
+imdb,q29a,Single Table,,1620,42120
+imdb,q29b,rdb_w_post_join_info,cast_info,1,12
+imdb,q29b,rdb_w_post_join_info,char_name,1,9
+imdb,q29b,rdb_w_post_join_info,name,1,18
+imdb,q29b,rdb_w_post_join_info,title,1,11
+imdb,q29b,rdb_wo_post_join_info,char_name,1,5
+imdb,q29b,rdb_wo_post_join_info,name,1,14
+imdb,q29b,rdb_wo_post_join_info,title,1,7
+imdb,q29b,Single Table,,15,390
+imdb,q29c,rdb_w_post_join_info,cast_info,3,36
+imdb,q29c,rdb_w_post_join_info,char_name,3,32
+imdb,q29c,rdb_w_post_join_info,name,3,55
+imdb,q29c,rdb_w_post_join_info,title,3,40
+imdb,q29c,rdb_wo_post_join_info,char_name,3,20
+imdb,q29c,rdb_wo_post_join_info,name,3,43
+imdb,q29c,rdb_wo_post_join_info,title,3,28
+imdb,q29c,Single Table,,16308,516288
+imdb,q30a,rdb_w_post_join_info,cast_info,185,1480
+imdb,q30a,rdb_w_post_join_info,movie_info,175,2016
+imdb,q30a,rdb_w_post_join_info,movie_info_idx,149,1349
+imdb,q30a,rdb_w_post_join_info,name,160,2878
+imdb,q30a,rdb_w_post_join_info,title,149,2652
+imdb,q30a,rdb_wo_post_join_info,movie_info,2,14
+imdb,q30a,rdb_wo_post_join_info,movie_info_idx,149,753
+imdb,q30a,rdb_wo_post_join_info,name,160,2238
+imdb,q30a,rdb_wo_post_join_info,title,148,2048
+imdb,q30a,Single Table,,757,30573
+imdb,q30b,rdb_w_post_join_info,cast_info,4,32
+imdb,q30b,rdb_w_post_join_info,movie_info,3,32
+imdb,q30b,rdb_w_post_join_info,movie_info_idx,2,19
+imdb,q30b,rdb_w_post_join_info,name,4,67
+imdb,q30b,rdb_w_post_join_info,title,2,27
+imdb,q30b,rdb_wo_post_join_info,movie_info,2,14
+imdb,q30b,rdb_wo_post_join_info,movie_info_idx,2,11
+imdb,q30b,rdb_wo_post_join_info,name,4,51
+imdb,q30b,rdb_wo_post_join_info,title,2,19
+imdb,q30b,Single Table,,28,996
+imdb,q30c,rdb_w_post_join_info,cast_info,1723,13784
+imdb,q30c,rdb_w_post_join_info,movie_info,2421,24985
+imdb,q30c,rdb_w_post_join_info,movie_info_idx,1375,11322
+imdb,q30c,rdb_w_post_join_info,name,1177,21450
+imdb,q30c,rdb_w_post_join_info,title,1375,26460
+imdb,q30c,rdb_wo_post_join_info,movie_info,6,34
+imdb,q30c,rdb_wo_post_join_info,movie_info_idx,1300,5588
+imdb,q30c,rdb_wo_post_join_info,name,1176,16730
+imdb,q30c,rdb_wo_post_join_info,title,1365,20858
+imdb,q30c,Single Table,,8024,325909
+imdb,q31a,rdb_w_post_join_info,cast_info,145,1160
+imdb,q31a,rdb_w_post_join_info,movie_info,140,1562
+imdb,q31a,rdb_w_post_join_info,movie_info_idx,106,903
+imdb,q31a,rdb_w_post_join_info,name,132,2346
+imdb,q31a,rdb_w_post_join_info,title,106,1704
+imdb,q31a,rdb_wo_post_join_info,movie_info,2,14
+imdb,q31a,rdb_wo_post_join_info,movie_info_idx,106,479
+imdb,q31a,rdb_wo_post_join_info,name,132,1818
+imdb,q31a,rdb_wo_post_join_info,title,106,1280
+imdb,q31a,Single Table,,1273,46857
+imdb,q31b,rdb_w_post_join_info,cast_info,9,72
+imdb,q31b,rdb_w_post_join_info,movie_info,5,52
+imdb,q31b,rdb_w_post_join_info,movie_info_idx,4,38
+imdb,q31b,rdb_w_post_join_info,name,6,113
+imdb,q31b,rdb_w_post_join_info,title,4,37
+imdb,q31b,rdb_wo_post_join_info,movie_info,2,14
+imdb,q31b,rdb_wo_post_join_info,movie_info_idx,4,22
+imdb,q31b,rdb_wo_post_join_info,name,6,89
+imdb,q31b,rdb_wo_post_join_info,title,4,21
+imdb,q31b,Single Table,,84,2699
+imdb,q31c,rdb_w_post_join_info,cast_info,236,1888
+imdb,q31c,rdb_w_post_join_info,movie_info,292,3064
+imdb,q31c,rdb_w_post_join_info,movie_info_idx,153,1286
+imdb,q31c,rdb_w_post_join_info,name,220,4000
+imdb,q31c,rdb_w_post_join_info,title,153,2522
+imdb,q31c,rdb_wo_post_join_info,movie_info,6,34
+imdb,q31c,rdb_wo_post_join_info,movie_info_idx,153,674
+imdb,q31c,rdb_wo_post_join_info,name,220,3120
+imdb,q31c,rdb_wo_post_join_info,title,153,1910
+imdb,q31c,Single Table,,2825,103343
+imdb,q32a,rdb_w_post_join_info,link_type,0,0
+imdb,q32a,rdb_w_post_join_info,movie_link,0,0
+imdb,q32a,rdb_w_post_join_info,title,0,0
+imdb,q32a,rdb_wo_post_join_info,link_type,0,0
+imdb,q32a,rdb_wo_post_join_info,title,0,0
+imdb,q32a,Single Table,,0,0
+imdb,q32b,rdb_w_post_join_info,link_type,16,240
+imdb,q32b,rdb_w_post_join_info,movie_link,4388,52656
+imdb,q32b,rdb_w_post_join_info,title,3594,82694
+imdb,q32b,rdb_wo_post_join_info,link_type,16,176
+imdb,q32b,rdb_wo_post_join_info,title,3264,64125
+imdb,q32b,Single Table,,4388,206207
+imdb,q33a,rdb_w_post_join_info,company_name,4,96
+imdb,q33a,rdb_w_post_join_info,movie_companies,4,32
+imdb,q33a,rdb_w_post_join_info,movie_info_idx,1,7
+imdb,q33a,rdb_w_post_join_info,movie_link,1,8
+imdb,q33a,rdb_w_post_join_info,title,1,36
+imdb,q33a,rdb_wo_post_join_info,company_name,4,80
+imdb,q33a,rdb_wo_post_join_info,movie_info_idx,1,3
+imdb,q33a,rdb_wo_post_join_info,title,1,32
+imdb,q33a,Single Table,,8,740
+imdb,q33b,rdb_w_post_join_info,company_name,4,96
+imdb,q33b,rdb_w_post_join_info,movie_companies,4,32
+imdb,q33b,rdb_w_post_join_info,movie_info_idx,1,7
+imdb,q33b,rdb_w_post_join_info,movie_link,1,8
+imdb,q33b,rdb_w_post_join_info,title,1,36
+imdb,q33b,rdb_wo_post_join_info,company_name,4,80
+imdb,q33b,rdb_wo_post_join_info,movie_info_idx,1,3
+imdb,q33b,rdb_wo_post_join_info,title,1,32
+imdb,q33b,Single Table,,4,376
+imdb,q33c,rdb_w_post_join_info,company_name,23,574
+imdb,q33c,rdb_w_post_join_info,movie_companies,33,264
+imdb,q33c,rdb_w_post_join_info,movie_info_idx,13,91
+imdb,q33c,rdb_w_post_join_info,movie_link,17,136
+imdb,q33c,rdb_w_post_join_info,title,13,337
+imdb,q33c,rdb_wo_post_join_info,company_name,22,461
+imdb,q33c,rdb_wo_post_join_info,movie_info_idx,12,36
+imdb,q33c,rdb_wo_post_join_info,title,13,285
+imdb,q33c,Single Table,,114,9548

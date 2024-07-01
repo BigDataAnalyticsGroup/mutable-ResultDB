@@ -1,0 +1,126 @@
+description: Join-Order Benchmark q12c.
+suite: result-db
+benchmark: job
+name: q12c
+readonly: true
+chart:
+    x:
+        scale: linear
+        type: O
+        label: JOB Queries
+    y:
+        scale: linear
+        type: Q
+        label: 'Execution time [ms]'
+    # Defaults: scale is "linear", type is "Q", label is "X" or "Y"
+data:
+    'company_name':
+        file: 'benchmark/job/data/company_name.csv'
+        format: 'csv'
+        delimiter: ','
+        header: 0
+        attributes:
+            'id': 'INT NOT NULL'
+            'name': 'CHAR 100 NOT NULL'
+            'country_code': 'CHAR 6'
+            'imdb_id': 'INT'
+            'name_pcode_nf': 'CHAR 5'
+            'name_pcode_sf': 'CHAR 5'
+            'md5sum': 'CHAR 32'
+    'company_type':
+        file: 'benchmark/job/data/company_type.csv'
+        format: 'csv'
+        delimiter: ','
+        header: 0
+        attributes:
+            'id': 'INT NOT NULL'
+            'kind': 'CHAR 32 NOT NULL'
+    'info_type':
+        file: 'benchmark/job/data/info_type.csv'
+        format: 'csv'
+        delimiter: ','
+        header: 0
+        attributes:
+            'id': 'INT NOT NULL'
+            'info': 'CHAR 32 NOT NULL'
+    'info_type':
+        file: 'benchmark/job/data/info_type.csv'
+        format: 'csv'
+        delimiter: ','
+        header: 0
+        attributes:
+            'id': 'INT NOT NULL'
+            'info': 'CHAR 32 NOT NULL'
+    'movie_companies':
+        file: 'benchmark/job/data/movie_companies.csv'
+        format: 'csv'
+        delimiter: ','
+        header: 0
+        attributes:
+            'id': 'INT NOT NULL'
+            'movie_id': 'INT NOT NULL'
+            'company_id': 'INT NOT NULL'
+            'company_type_id': 'INT NOT NULL'
+            'note': 'CHAR 100'
+    'movie_info':
+        file: 'benchmark/job/data/movie_info.csv'
+        format: 'csv'
+        delimiter: ','
+        header: 0
+        attributes:
+            'id': 'INT NOT NULL'
+            'movie_id': 'INT NOT NULL'
+            'info_type_id': 'INT NOT NULL'
+            'info': 'CHAR 43 NOT NULL'
+            'note': 'CHAR 19'
+    'movie_info_idx':
+        file: 'benchmark/job/data/movie_info_idx.csv'
+        format: 'csv'
+        delimiter: ','
+        header: 0
+        attributes:
+            'id': 'INT NOT NULL'
+            'movie_id': 'INT NOT NULL'
+            'info_type_id': 'INT NOT NULL'
+            'info': 'CHAR 3 NOT NULL'
+            'note': 'CHAR 1'
+    'title':
+        file: 'benchmark/job/data/title.csv'
+        format: 'csv'
+        delimiter: ','
+        header: 0
+        attributes:
+            'id': 'INT NOT NULL'
+            'title': 'CHAR 100 NOT NULL'
+            'imdb_index': 'CHAR 5'
+            'kind_id': 'INT NOT NULL'
+            'production_year': 'INT'
+            'imdb_id': 'INT'
+            'phonetic_code': 'CHAR 5'
+            'episode_of_id': 'INT'
+            'season_nr': 'INT'
+            'episode_nr': 'INT'
+            'series_years': 'CHAR 9'
+            'md5sum': 'CHAR 32'
+
+
+systems:
+    mutable:
+        args: >-
+          --backend WasmV8
+          --no-simd
+          --cardinality-estimator Injected
+          --use-cardinality-file benchmark/result-db/algorithm/job/q12c_cardinalities.json
+          --insist-no-rehashing
+        configurations:                                   # Different experiment configurations.
+            'WasmV8, resultdb':
+                args: --result-db
+                pattern: '^Execute machine code:.*'
+            'WasmV8, decompose':
+                args: --decompose
+                pattern: '^Execute machine code:.*'
+            'WasmV8, single-table':
+                args: ''
+                pattern: '^Execute machine code:.*'
+        cases:
+            0: 'SELECT cn.name, mi_idx.info, t.title FROM company_name AS cn, company_type AS ct, info_type AS it1, info_type AS it2, movie_companies AS mc, movie_info AS mi, movie_info_idx AS mi_idx, title AS t WHERE cn.country_code = "[us]" AND ct.kind = "production companies" AND it1.info = "genres" AND it2.info = "rating" AND (mi.info = "Drama" OR mi.info = "Horror" OR mi.info = "Western" OR mi.info = "Family") AND mi_idx.info > "7.0" AND t.production_year >= 2000 AND t.production_year <= 2010 AND t.id = mi.movie_id AND t.id = mi_idx.movie_id AND mi.info_type_id = it1.id AND mi_idx.info_type_id = it2.id AND t.id = mc.movie_id AND ct.id = mc.company_type_id AND cn.id = mc.company_id AND mc.movie_id = mi.movie_id AND mc.movie_id = mi_idx.movie_id AND mi.movie_id = mi_idx.movie_id;'

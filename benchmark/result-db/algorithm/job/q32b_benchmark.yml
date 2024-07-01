@@ -1,0 +1,110 @@
+description: Join-Order Benchmark q32b.
+suite: result-db
+benchmark: job
+name: q32b
+readonly: true
+chart:
+    x:
+        scale: linear
+        type: O
+        label: JOB Queries
+    y:
+        scale: linear
+        type: Q
+        label: 'Execution time [ms]'
+    # Defaults: scale is "linear", type is "Q", label is "X" or "Y"
+data:
+    'keyword':
+        file: 'benchmark/job/data/keyword.csv'
+        format: 'csv'
+        delimiter: ','
+        header: 0
+        attributes:
+            'id': 'INT NOT NULL'
+            'keyword': 'CHAR 74 NOT NULL'
+            'phonetic_code': 'CHAR 5'
+    'link_type':
+        file: 'benchmark/job/data/link_type.csv'
+        format: 'csv'
+        delimiter: ','
+        header: 0
+        attributes:
+            'id': 'INT NOT NULL'
+            'link': 'CHAR 32 NOT NULL'
+    'movie_keyword':
+        file: 'benchmark/job/data/movie_keyword.csv'
+        format: 'csv'
+        delimiter: ','
+        header: 0
+        attributes:
+            'id': 'INT NOT NULL'
+            'movie_id': 'INT NOT NULL'
+            'keyword_id': 'INT NOT NULL'
+    'movie_link':
+        file: 'benchmark/job/data/movie_link.csv'
+        format: 'csv'
+        delimiter: ','
+        header: 0
+        attributes:
+            'id': 'INT NOT NULL'
+            'movie_id': 'INT NOT NULL'
+            'linked_movie_id': 'INT NOT NULL'
+            'link_type_id': 'INT NOT NULL'
+    'title':
+        file: 'benchmark/job/data/title.csv'
+        format: 'csv'
+        delimiter: ','
+        header: 0
+        attributes:
+            'id': 'INT NOT NULL'
+            'title': 'CHAR 100 NOT NULL'
+            'imdb_index': 'CHAR 5'
+            'kind_id': 'INT NOT NULL'
+            'production_year': 'INT'
+            'imdb_id': 'INT'
+            'phonetic_code': 'CHAR 5'
+            'episode_of_id': 'INT'
+            'season_nr': 'INT'
+            'episode_nr': 'INT'
+            'series_years': 'CHAR 9'
+            'md5sum': 'CHAR 32'
+    'title':
+        file: 'benchmark/job/data/title.csv'
+        format: 'csv'
+        delimiter: ','
+        header: 0
+        attributes:
+            'id': 'INT NOT NULL'
+            'title': 'CHAR 100 NOT NULL'
+            'imdb_index': 'CHAR 5'
+            'kind_id': 'INT NOT NULL'
+            'production_year': 'INT'
+            'imdb_id': 'INT'
+            'phonetic_code': 'CHAR 5'
+            'episode_of_id': 'INT'
+            'season_nr': 'INT'
+            'episode_nr': 'INT'
+            'series_years': 'CHAR 9'
+            'md5sum': 'CHAR 32'
+
+
+systems:
+    mutable:
+        args: >-
+          --backend WasmV8
+          --no-simd
+          --cardinality-estimator Injected
+          --use-cardinality-file benchmark/result-db/algorithm/job/q32b_cardinalities.json
+          --insist-no-rehashing
+        configurations:                                   # Different experiment configurations.
+            'WasmV8, resultdb':
+                args: --result-db
+                pattern: '^Execute machine code:.*'
+            'WasmV8, decompose':
+                args: --decompose
+                pattern: '^Execute machine code:.*'
+            'WasmV8, single-table':
+                args: ''
+                pattern: '^Execute machine code:.*'
+        cases:
+            0: 'SELECT lt.link, t1.title, t2.title FROM keyword AS k, link_type AS lt, movie_keyword AS mk, movie_link AS ml, title AS t1, title AS t2 WHERE k.keyword ="character-name-in-title" AND mk.keyword_id = k.id AND t1.id = mk.movie_id AND ml.movie_id = t1.id AND ml.linked_movie_id = t2.id AND lt.id = ml.link_type_id AND mk.movie_id = t1.id;'

@@ -1,0 +1,16 @@
+commit,date,version,suite,benchmark,experiment,name,config,case,time,runid
+52fa6295d9f2d5c75ece6c8be2bdb05420052ac7,2025-01-11,1,result-db,job,q14a,"mutable (single core, WasmV8, resultdb)",Execution Time,0,1728.97,0
+52fa6295d9f2d5c75ece6c8be2bdb05420052ac7,2025-01-11,1,result-db,job,q14a,"mutable (single core, WasmV8, resultdb)",Execution Time,0,1742.99,1
+52fa6295d9f2d5c75ece6c8be2bdb05420052ac7,2025-01-11,1,result-db,job,q14a,"mutable (single core, WasmV8, resultdb)",Execution Time,0,1733.57,2
+52fa6295d9f2d5c75ece6c8be2bdb05420052ac7,2025-01-11,1,result-db,job,q14a,"mutable (single core, WasmV8, resultdb)",Execution Time,0,1738.19,3
+52fa6295d9f2d5c75ece6c8be2bdb05420052ac7,2025-01-11,1,result-db,job,q14a,"mutable (single core, WasmV8, resultdb)",Execution Time,0,1736.35,4
+52fa6295d9f2d5c75ece6c8be2bdb05420052ac7,2025-01-11,1,result-db,job,q14a,"mutable (single core, WasmV8, decompose)",Execution Time,0,741.016,0
+52fa6295d9f2d5c75ece6c8be2bdb05420052ac7,2025-01-11,1,result-db,job,q14a,"mutable (single core, WasmV8, decompose)",Execution Time,0,739.969,1
+52fa6295d9f2d5c75ece6c8be2bdb05420052ac7,2025-01-11,1,result-db,job,q14a,"mutable (single core, WasmV8, decompose)",Execution Time,0,740.88,2
+52fa6295d9f2d5c75ece6c8be2bdb05420052ac7,2025-01-11,1,result-db,job,q14a,"mutable (single core, WasmV8, decompose)",Execution Time,0,740.581,3
+52fa6295d9f2d5c75ece6c8be2bdb05420052ac7,2025-01-11,1,result-db,job,q14a,"mutable (single core, WasmV8, decompose)",Execution Time,0,739.926,4
+52fa6295d9f2d5c75ece6c8be2bdb05420052ac7,2025-01-11,1,result-db,job,q14a,"mutable (single core, WasmV8, single-table)",Execution Time,0,740.97,0
+52fa6295d9f2d5c75ece6c8be2bdb05420052ac7,2025-01-11,1,result-db,job,q14a,"mutable (single core, WasmV8, single-table)",Execution Time,0,738.786,1
+52fa6295d9f2d5c75ece6c8be2bdb05420052ac7,2025-01-11,1,result-db,job,q14a,"mutable (single core, WasmV8, single-table)",Execution Time,0,738.357,2
+52fa6295d9f2d5c75ece6c8be2bdb05420052ac7,2025-01-11,1,result-db,job,q14a,"mutable (single core, WasmV8, single-table)",Execution Time,0,740.85,3
+52fa6295d9f2d5c75ece6c8be2bdb05420052ac7,2025-01-11,1,result-db,job,q14a,"mutable (single core, WasmV8, single-table)",Execution Time,0,740.158,4
