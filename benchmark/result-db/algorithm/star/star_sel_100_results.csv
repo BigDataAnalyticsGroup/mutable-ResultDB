@@ -1,0 +1,16 @@
+commit,date,version,suite,benchmark,experiment,name,config,case,time,runid
+6bc764d520b6212c75c1ee36df6df0948732b154,2024-06-12,1,result-db,star,sel_100,"mutable (single core, WasmV8, single-table)",Execution Time,0,297.153,0
+6bc764d520b6212c75c1ee36df6df0948732b154,2024-06-12,1,result-db,star,sel_100,"mutable (single core, WasmV8, single-table)",Execution Time,0,296.771,1
+6bc764d520b6212c75c1ee36df6df0948732b154,2024-06-12,1,result-db,star,sel_100,"mutable (single core, WasmV8, single-table)",Execution Time,0,297.046,2
+6bc764d520b6212c75c1ee36df6df0948732b154,2024-06-12,1,result-db,star,sel_100,"mutable (single core, WasmV8, single-table)",Execution Time,0,296.666,3
+6bc764d520b6212c75c1ee36df6df0948732b154,2024-06-12,1,result-db,star,sel_100,"mutable (single core, WasmV8, single-table)",Execution Time,0,296.696,4
+6bc764d520b6212c75c1ee36df6df0948732b154,2024-06-12,1,result-db,star,sel_100,"mutable (single core, WasmV8, decompose)",Execution Time,0,7853.21,0
+6bc764d520b6212c75c1ee36df6df0948732b154,2024-06-12,1,result-db,star,sel_100,"mutable (single core, WasmV8, decompose)",Execution Time,0,7815.09,1
+6bc764d520b6212c75c1ee36df6df0948732b154,2024-06-12,1,result-db,star,sel_100,"mutable (single core, WasmV8, decompose)",Execution Time,0,7852.66,2
+6bc764d520b6212c75c1ee36df6df0948732b154,2024-06-12,1,result-db,star,sel_100,"mutable (single core, WasmV8, decompose)",Execution Time,0,7835.29,3
+6bc764d520b6212c75c1ee36df6df0948732b154,2024-06-12,1,result-db,star,sel_100,"mutable (single core, WasmV8, decompose)",Execution Time,0,7846.16,4
+6bc764d520b6212c75c1ee36df6df0948732b154,2024-06-12,1,result-db,star,sel_100,"mutable (single core, WasmV8, resultdb)",Execution Time,0,4535.15,0
+6bc764d520b6212c75c1ee36df6df0948732b154,2024-06-12,1,result-db,star,sel_100,"mutable (single core, WasmV8, resultdb)",Execution Time,0,4529.44,1
+6bc764d520b6212c75c1ee36df6df0948732b154,2024-06-12,1,result-db,star,sel_100,"mutable (single core, WasmV8, resultdb)",Execution Time,0,4538.73,2
+6bc764d520b6212c75c1ee36df6df0948732b154,2024-06-12,1,result-db,star,sel_100,"mutable (single core, WasmV8, resultdb)",Execution Time,0,4545.97,3
+6bc764d520b6212c75c1ee36df6df0948732b154,2024-06-12,1,result-db,star,sel_100,"mutable (single core, WasmV8, resultdb)",Execution Time,0,4536.68,4
