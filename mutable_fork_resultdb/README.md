@@ -1,14 +1,18 @@
-# Instructions
-This page gives a step-by-step instruction on how to carry out the `Result DB` experiments.
-All the following commands have to be executed from the root project folder!
+# This repository is a **fork** of [mu*t*able](https://github.com/mutable-org/mutable) including the Result DB changes.
 
-## General Prerequisites
+To execute the Result DB experiments, follow these instructions.
+
+## Instructions
+This page gives a step-by-step instruction on how to carry out the `Result DB` experiments.
+All the following commands have to be executed from the **mutable_fork_resultdb** project folder!
+
+### General Prerequisites
 * Set up a Python virtual environment using [pipenv](https://pipenv.pypa.io/en/latest/).
     ```console
     $ pipenv sync
     ```
     This installs all required Python packages for the utility scripts and visualization.
-    In case of problems with `pygraphviz` on MacOS, check this [doc](https://github.com/BigDataAnalyticsGroup/mutable-ResultDB/blob/main/doc/preliminaries.md#pipenv).
+    In case of problems with `pygraphviz` on macOS, check this [doc](https://github.com/BigDataAnalyticsGroup/mutable-ResultDB/blob/resultdb-submission/mutable_fork_resultdb/doc/preliminaries.md#pipenv).
 
     ```console
     $ pipenv shell
@@ -35,7 +39,7 @@ All the following commands have to be executed from the root project folder!
     - Once installed, set the _shared\_buffers_ value to 16 GiB and _work\_mem_ to 1 GiB. There are multiple ways to [set parameters](https://www.postgresql.org/docs/current/config-setting.html).
 
         For the experiments, we changed the parameters via the configuration file `postgresql.conf`.
-        The configuration file is usually contained in the database cluster's data directory, e.g. `/usr/local/var/postgresql/` on MacOS or `/var/lib/postgres/data/` on Linux.
+        The configuration file is usually contained in the database cluster's data directory, e.g. `/usr/local/var/postgresql/` on macOS or `/var/lib/postgres/data/` on Linux.
         Make sure to restart your server after changing the values.
 
     - Create the databases and import the data.
@@ -45,12 +49,13 @@ All the following commands have to be executed from the root project folder!
         ```
 
 * Build mutable with the WebAssembly backend
-    - Make sure to have all required [prerequisites](https://github.com/BigDataAnalyticsGroup/mutable-ResultDB/blob/main/doc/preliminaries.md).
+    - Make sure to have all required
+      [prerequisites](https://github.com/BigDataAnalyticsGroup/mutable-ResultDB/blob/resultdb-submission/mutable_fork_resultdb/doc/preliminaries.md).
     - Setup mutable by following these
-      [instructions](https://github.com/BigDataAnalyticsGroup/mutable-ResultDB/blob/main/doc/setup.md#build-mutable).
+      [instructions](https://github.com/BigDataAnalyticsGroup/mutable-ResultDB/blob/resultdb-submission/mutable_fork_resultdb/doc/setup.md#build-mutable).
       Note, that you have to build mutable with its WebAssembly-based backend.
 
-## Result Set Sizes
+### Result Set Sizes
 The corresponding experiments can be found in `./result-set-sizes/`.
 * Join Order Benchmark
 
@@ -67,7 +72,7 @@ The corresponding experiments can be found in `./result-set-sizes/`.
     Since we exactly know how our results look like for different selectivity values, we do not have to manually
       compute the result sets. We can just calculate the result sets as done in the Visualization notebook.
 
-## Rewrite Methods
+### Rewrite Methods
 * Join Order Benchmark
     - To generate the rewrite methods, execute the following script.
         ```console
@@ -91,7 +96,7 @@ The corresponding experiments can be found in `./result-set-sizes/`.
         ```
     - The results can be found in `./benchmark/result-db/rewrite-methods/star/rewrite-results.csv`.
 
-## Result DB Algorithm
+### Result DB Algorithm
 * Join Order Benchmark
     - Generate the real cardinalities for injection into mutable. **Make sure to add your PostgreSQL username!**
     ```console
@@ -114,7 +119,7 @@ The corresponding experiments can be found in `./result-set-sizes/`.
     - The results are individually written to `<query>_results.csv`.
 
 
-## Visualization
+### Visualization
 All figures and data (i.e. result set sizes and overheads) in the paper can be found in the `Visualization.ipynb`
 notebook in `./benchmark/result-db/visualization/`.
 
