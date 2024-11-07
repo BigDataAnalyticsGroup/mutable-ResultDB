@@ -539,7 +539,7 @@ void m::wasm::detail::index_seek(const v8::FunctionCallbackInfo<v8::Value> &info
     if constexpr (std::same_as<V8ValueT, v8::BigInt>)
         key = info[1].As<V8ValueT>()->Int64Value();
     else if constexpr (std::same_as<V8ValueT, v8::String>) {
-        auto offset = info[1].As<v8::Uint32>()->Value();
+        auto offset = info[1].As<v8::BigInt>()->Uint64Value();
         auto &context = WasmEngine::Get_Wasm_Context_By_ID(Module::ID());
         key = reinterpret_cast<const char*>(context.vm.as<uint8_t*>() + offset);
     } else
@@ -555,7 +555,7 @@ void m::wasm::detail::index_seek(const v8::FunctionCallbackInfo<v8::Value> &info
         M_CONSTEXPR_COND(IsLower, index.lower_bound(key), index.upper_bound(key))
     );
     M_insist(std::in_range<uint32_t>(offset), "should fit in uint32_t");
-    info.GetReturnValue().Set(uint32_t(offset));
+    info.GetReturnValue().Set(uint32_t(offset)); // TODO: not possible to set 64-bit return value
 }
 
 template<typename Index>
@@ -563,20 +563,20 @@ void m::wasm::detail::index_sequential_scan(const v8::FunctionCallbackInfo<v8::V
 {
     /*----- Unpack function parameters -----*/
     auto index_id = info[0].As<v8::BigInt>()->Uint64Value();
-    auto entry_offset = info[1].As<v8::Uint32>()->Value();
-    auto address_offset = info[2].As<v8::Uint32>()->Value();
-    auto batch_size = info[3].As<v8::Uint32>()->Value();
+    auto entry_offset = info[1].As<v8::BigInt>()->Uint64Value();
+    auto address_offset = info[2].As<v8::BigInt>()->Uint64Value();
+    auto batch_size = info[3].As<v8::BigInt>()->Uint64Value();
 
     /*----- Compute adress to write results to. -----*/
     auto &context = WasmEngine::Get_Wasm_Context_By_ID(Module::ID());
-    auto buffer_address = reinterpret_cast<uint32_t*>(context.vm.as<uint8_t*>() + address_offset);
+    auto buffer_address = reinterpret_cast<uint64_t*>(context.vm.as<uint8_t*>() + address_offset);
 
     /*----- Obtain index and cast to correct type. -----*/
     auto &index = as<const Index>(context.indexes[index_id]);
 
     /*----- Scan index and write result tuple ids to buffer -----*/
     auto it = index.begin() + entry_offset;
-    for (uint32_t i = 0; i < batch_size; ++i, ++it)
+    for (uint64_t i = 0; i < batch_size; ++i, ++it)
         buffer_address[i] = it->second;
 }
 
