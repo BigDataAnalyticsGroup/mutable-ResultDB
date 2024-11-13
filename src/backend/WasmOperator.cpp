@@ -1359,7 +1359,7 @@ ConditionSet IndexScan<IndexMethod>::pre_condition(std::size_t child_idx,
     std::vector<Schema::Identifier> ids;
     for (auto &entry : cnf.get_required()) {
         Schema::Identifier &id = entry.id;
-        M_insist(table.name() == id.prefix, "Table name should match designator table name");
+        M_insist(scan.alias() == id.prefix, "Table name should match designator table name");
 
         /* Keep attributes for which an index exists. */
         if (DB.has_index(table.name(), id.name, IndexMethod))
