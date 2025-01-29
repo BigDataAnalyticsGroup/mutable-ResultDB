@@ -1,13 +1,14 @@
 # This repository is a **fork** of [mu*t*able](https://github.com/mutable-org/mutable) including the Result DB changes.
 
-This page gives a step-by-step instruction on how to carry out the `Result DB` experiments.
+This page gives a step-by-step instruction on how to carry out the `ResultDB` experiments.
 Some of the experiments require `mutable`.
 You can either build `mutable` manually or use the provided Docker compose file `compose.yaml` to automate the process.
 
 ## Set up using `compose.yaml`
 * Ensure there are no incomplete builds of mutable before setting up Docker with the provided `compose.yaml` file, i.e., `the mutable_fork_folder` remains unchanged from its state after the download.
 * Start your Docker daemon.
-* Create a `data` folder that will contain the PostgreSQL files.
+* Create a `data` folder which will store the PostgreSQL files in the root directory of this repository, i.e., the
+  directory that contains the `Dockerfile` and `compose.yaml` files.
     ```console
     $ mkdir data
     ```
@@ -22,7 +23,7 @@ You can either build `mutable` manually or use the provided Docker compose file 
     The Docker image `postgres` contains a running instance of PostgreSQL version 16.2.
 * Specify the PostgreSQL parameters.
     On your local machine, the`./data` folder contains the configuration file `postgresql.conf`.
-    Set the _shared\_buffers_ value to 16 GiB and _work\_mem_ to 1 GiB inside the configuration file.
+    Set the _shared\_buffers_ value to 16 GB and _work\_mem_ to 1 GB inside the configuration file.
     Afterward, restart the postgres server by restarting the `postgres` Docker container.
     ```console
     $ docker restart postgres
@@ -110,13 +111,13 @@ The corresponding experiments can be found in `./result-set-sizes/`.
 * Synthetic Star Schema
 
     Since we exactly know how our results look like for different selectivity values, we do not have to manually
-      compute the result sets. We can just calculate the result sets as done in the Visualization notebook.
+      compute the result sets. We can just calculate the result sets as done in the `Visualization.ipynb` notebook.
 
 ### Rewrite Methods
 * Join Order Benchmark
     - To generate the rewrite methods, execute the following script.
         ```console
-        $ pipenv run python ./benchmark/result-db/rewrite-methods/generate_rewrite_methods.py -q imdb -o benchmark/result-db/rewrite-methods/job/ --no-data-transfer
+        $ pipenv run python ./benchmark/result-db/rewrite-methods/create_rewrite_methods.py -q imdb -o benchmark/result-db/rewrite-methods/job/
         ```
         This script creates `sql` files for each JOB query in `./benchmark/result-db/rewrite-methods/job/<query>`.
         Each file corresponds to either the default query or one of the rewrite methods.
@@ -128,10 +129,6 @@ The corresponding experiments can be found in `./result-set-sizes/`.
 
 ### Result DB Algorithm
 * Join Order Benchmark
-    - Generate the real cardinalities for injection into mutable. **Make sure to add your PostgreSQL username!**
-        ```console
-        $ pipenv run python ./benchmark/result-db/algorithm/create_injected_cardinalities.py -u <username> -d imdb -q imdb -o ./benchmark/result-db/algorithm/job/
-        ```
     - Run the benchmark scripts. You may need to make the file executable.
         ```console
         $ chmod +x ./benchmark/result-db/algorithm/run_benchmarks.sh
@@ -141,10 +138,16 @@ The corresponding experiments can be found in `./result-set-sizes/`.
 
 ### Post-join
 * Join Order Benchmark
+    - Generate and execute the rewrite methods for the post-join queries to obtain the query execution times for computing a relationship-preserving subdatabase.
+        ```console
+        $ pipenv run python ./benchmark/result-db/rewrite-methods/create_rewrite_methods.py -q imdb -w post-join -o benchmark/result-db/rewrite-methods/job/
+        $ pipenv run python ./benchmark/result-db/rewrite-methods/run.py -u <username> -d imdb -n 5 -q imdb -w post-join --directory ./benchmark/result-db/rewrite-methods/job/
+        ```
+        The results are written to `./benchmark/result-db/rewrite-methods/job/rewrite-results-post-join.csv`
     - Generate the post-join files. This includes the reduced base tables, real cardinalities, benchmark script for
       execution in mutable, and (setup) files for the execution in PostgreSQL.
         ```console
-        $ pipenv run python ./benchmark/result-db/post-join/generate_post-join.py -u <username> -d imdb -q imdb -o ./benchmark/result-db/post-join/job/
+        $ pipenv run python ./benchmark/result-db/post-join/create_post-join.py -u <username> -d imdb -q imdb -o ./benchmark/result-db/post-join/job/
         ```
     - Run the PostgreSQL benchmarks. **Make sure to add your PostgreSQL username!**
         ```console
