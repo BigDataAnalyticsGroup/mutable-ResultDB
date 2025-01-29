@@ -1,6 +1,0 @@
-commit,date,version,suite,benchmark,experiment,name,config,case,time,runid
-e566fe60da0b67e83039ea1047096d56246121b2,2024-10-07,1,result-db,star,star_sel_10,"mutable (single core, WasmV8, single-table)",Execution Time,0,0.929,0
-e566fe60da0b67e83039ea1047096d56246121b2,2024-10-07,1,result-db,star,star_sel_10,"mutable (single core, WasmV8, single-table)",Execution Time,0,0.14,1
-e566fe60da0b67e83039ea1047096d56246121b2,2024-10-07,1,result-db,star,star_sel_10,"mutable (single core, WasmV8, single-table)",Execution Time,0,0.116,2
-e566fe60da0b67e83039ea1047096d56246121b2,2024-10-07,1,result-db,star,star_sel_10,"mutable (single core, WasmV8, single-table)",Execution Time,0,0.114,3
-e566fe60da0b67e83039ea1047096d56246121b2,2024-10-07,1,result-db,star,star_sel_10,"mutable (single core, WasmV8, single-table)",Execution Time,0,0.139,4
