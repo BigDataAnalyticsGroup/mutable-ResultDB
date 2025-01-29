@@ -158,20 +158,6 @@ if __name__ == '__main__':
             "q32a", "q32b",
             "q33a", "q33b", "q33c",
         ]
-    elif "star" in config['queries']: # execute all star queries
-        assert len(config['queries']) == 1, "list of queries may only contain 'star' or actual queries"
-        config['queries'] = [
-                             'star_sel_10',
-                             'star_sel_20',
-                             'star_sel_30',
-                             'star_sel_40',
-                             'star_sel_50',
-                             'star_sel_60',
-                             'star_sel_70',
-                             'star_sel_80',
-                             'star_sel_90',
-                             'star_sel_100',
-                            ]
 
     if __debug__: print('Configuration:', config)
 

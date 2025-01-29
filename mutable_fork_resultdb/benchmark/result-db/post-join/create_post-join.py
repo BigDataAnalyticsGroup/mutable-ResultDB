@@ -228,7 +228,7 @@ def generate_post_join_files(query: str, config):
     output_dir = config['output_dir'] + query
     Path(output_dir).mkdir(exist_ok=True)
     result_db_filename = f'{query}_resultdb.sql'
-    workload_name = "job" if config['database'] in ["imdb", "imdb_reduced"] else "star"
+    workload_name = "job" if config['database'] in ["imdb", "imdb_reduced"] else ""
 
     query_graph: JoinGraph = getattr(q_def, f"create_{query}")() # execute the function `create_<query>` of module `q_def`
 
@@ -329,13 +329,10 @@ def generate_post_join_files(query: str, config):
     ########## 3. Create PostgreSQL setup ##########
     ## Schema
     postgres_schema_filename = 'schema_postgres.sql'
-    if not "star" in query:
-        postgres_schema = postgres_info.job_schema()
-    else:
-        postgres_schema = postgres_info.star_schema()
+    postgres_schema = postgres_info.job_schema()
 
     query_count = 0
-    for r, projs in sorted(projections.items(), key=lambda e: e[0].name): # make sure that star schema is sorted lexicographically
+    for r, projs in sorted(projections.items(), key=lambda e: e[0].name):
         r_schema = postgres_schema[r.name]
         postgres_schema_reduced = f"CREATE TABLE {r.name} ("
         for i, attr in enumerate(projs):
@@ -393,10 +390,9 @@ def generate_post_join_files(query: str, config):
         postgres_setup += f"{r.name} FROM '$(pwd)/benchmark/result-db/post-join/{workload_name}/{query}/{query}_{r.name}.csv' "
         postgres_setup += "WITH (FORMAT csv, DELIMITER ',', QUOTE '\\\"', ESCAPE '\\\\')\"\n"
 
-    if not "star" in query: # create indexes only for JOB workload
-        # Create indexes
-        postgres_setup += 'psql -U ${USER} -d ${DB_NAME} -f "'
-        postgres_setup += f"$(pwd)/benchmark/result-db/post-join/{workload_name}/{query}/fkindexes_postgres.sql\"\n"
+    # Create indexes
+    postgres_setup += 'psql -U ${USER} -d ${DB_NAME} -f "'
+    postgres_setup += f"$(pwd)/benchmark/result-db/post-join/{workload_name}/{query}/fkindexes_postgres.sql\"\n"
 
     write_to_file(output_dir, postgres_setup_filename, postgres_setup)
 
@@ -430,22 +426,19 @@ def generate_post_join_files(query: str, config):
 
     # 6. Generate the benchmark file for mutable
     mutable_benchmark_filename = f'{query}_benchmark.yml'
-    if not "star" in query:
-        # create data & schema for mutable
-        data = '\n'
-        for r, projs in projections.items():
-            data += f"\t'{r.name}':\n"
-            data += f"\t\tfile: '{output_dir}/{query}_{r.name}.csv'\n"
-            data += f"\t\tdelimiter: ','\n"
-            data += f"\t\theader: 0\n"
-            data += f"\t\tattributes:\n"
-            for attr in projs:
-                data += f"\t\t\t'{attr}': '{mutable_schema[r.name][attr]}'\n"
-        data = data.replace('\t', '    ')
-        benchmark_code = generate_mutable_benchmark_file("job", query, query_text, output_dir, data)
-        write_to_file(output_dir, mutable_benchmark_filename, benchmark_code)
-    else:
-        pass
+    # create data & schema for mutable
+    data = '\n'
+    for r, projs in projections.items():
+        data += f"\t'{r.name}':\n"
+        data += f"\t\tfile: '{output_dir}/{query}_{r.name}.csv'\n"
+        data += f"\t\tdelimiter: ','\n"
+        data += f"\t\theader: 0\n"
+        data += f"\t\tattributes:\n"
+        for attr in projs:
+            data += f"\t\t\t'{attr}': '{mutable_schema[r.name][attr]}'\n"
+    data = data.replace('\t', '    ')
+    benchmark_code = generate_mutable_benchmark_file("job", query, query_text, output_dir, data)
+    write_to_file(output_dir, mutable_benchmark_filename, benchmark_code)
 
 if __name__ == '__main__':
     # Command Line Arguments
@@ -461,41 +454,6 @@ if __name__ == '__main__':
     args = parser.parse_args()
     config: dict[str, Any] = vars(args)
 
-    # job_queries = [
-    #     "q1a",  "q1b",  "q1c",  "q1d",
-    #     "q2a",  "q2b",  "q2c",  "q2d",
-    #     "q3a",  "q3b",  "q3c",
-    #     "q4a",  "q4b",  "q4c",
-    #     "q5a",  "q5b",  "q5c",
-    #     "q6a",  "q6b",  "q6c",  "q6d",  "q6e",  "q6f",
-    #     "q7a",  "q7b",  "q7c",
-    #     "q8a",  "q8b",  "q8c",  "q8d",
-    #     "q9a",  "q9b",  "q9c",  "q9d",
-    #     "q10a", "q10b", "q10c",
-    #     "q11a", "q11b", "q11c", "q11d",
-    #     "q12a", "q12b", "q12c",
-    #     "q13a", "q13b", "q13c", "q13d",
-    #     "q14a", "q14b", "q14c",
-    #     "q15a", "q15b", "q15c", "q15d",
-    #     "q16a", "q16b", "q16c", "q16d",
-    #     "q17a", "q17b", "q17c", "q17d", "q17e", "q17f",
-    #     "q18a", "q18b", "q18c",
-    #     "q19a", "q19b", "q19c", "q19d",
-    #     "q20a", "q20b", "q20c",
-    #     "q21a", "q21b", "q21c",
-    #     "q22a", "q22b", "q22c", "q22d",
-    #     "q23a", "q23b", "q23c",
-    #     "q24a", "q24b",
-    #     "q25a", "q25b", "q25c",
-    #     "q26a", "q26b", "q26c",
-    #     "q27a", "q27b", "q27c",
-    #     "q28a", "q28b", "q28c",
-    #     "q29a", "q29b", "q29c",
-    #     "q30a", "q30b", "q30c",
-    #     "q31a", "q31b", "q31c",
-    #     "q32a", "q32b",
-    #     "q33a", "q33b", "q33c",
-    # ]
     job_queries = [
         "q1b",
         "q2a",

@@ -476,62 +476,71 @@ if __name__ == '__main__':
 
     parser.add_argument("-q", "--queries", default=["imdb"], nargs='+', type=str)
     parser.add_argument("-o", "--output_dir", default="benchmark/result-db/rewrite-methods/job/")
+    parser.add_argument("-w", "--workload", default="job")
     parser.add_argument('--data-transfer', action=argparse.BooleanOptionalAction, default=False) # enable with --data-transfer
 
     args = parser.parse_args()
     config: dict[str, Any] = vars(args)
 
-    if "imdb" in config['queries']: # execute all imdb queries
-        assert len(config['queries']) == 1, "list of queries may only contain 'imdb' or actual queries"
-        config['queries'] = [
-            "q1a",  "q1b",  "q1c",  "q1d",
-            "q2a",  "q2b",  "q2c",  "q2d",
-            "q3a",  "q3b",  "q3c",
-            "q4a",  "q4b",  "q4c",
-            "q5a",  "q5b",  "q5c",
-            "q6a",  "q6b",  "q6c",  "q6d",  "q6e",  "q6f",
-            "q7a",  "q7b",  "q7c",
-            "q8a",  "q8b",  "q8c",  "q8d",
-            "q9a",  "q9b",  "q9c",  "q9d",
-            "q10a", "q10b", "q10c",
-            "q11a", "q11b", "q11c", "q11d",
-            "q12a", "q12b", "q12c",
-            "q13a", "q13b", "q13c", "q13d",
-            "q14a", "q14b", "q14c",
-            "q15a", "q15b", "q15c", "q15d",
-            "q16a", "q16b", "q16c", "q16d",
-            "q17a", "q17b", "q17c", "q17d", "q17e", "q17f",
-            "q18a", "q18b", "q18c",
-            "q19a", "q19b", "q19c", "q19d",
-            "q20a", "q20b", "q20c",
-            "q21a", "q21b", "q21c",
-            "q22a", "q22b", "q22c", "q22d",
-            "q23a", "q23b", "q23c",
-            "q24a", "q24b",
-            "q25a", "q25b", "q25c",
-            "q26a", "q26b", "q26c",
-            "q27a", "q27b", "q27c",
-            "q28a", "q28b", "q28c",
-            "q29a", "q29b", "q29c",
-            "q30a", "q30b", "q30c",
-            "q31a", "q31b", "q31c",
-            "q32a", "q32b",
-            "q33a", "q33b", "q33c",
-        ]
-    elif "star" in config['queries']: # execute all star queries
-        assert len(config['queries']) == 1, "list of queries may only contain 'star' or actual queries"
-        config['queries'] = [
-                             'star_sel_10',
-                             'star_sel_20',
-                             'star_sel_30',
-                             'star_sel_40',
-                             'star_sel_50',
-                             'star_sel_60',
-                             'star_sel_70',
-                             'star_sel_80',
-                             'star_sel_90',
-                             'star_sel_100',
-                            ]
+    job_queries = [
+           "q1a",  "q1b",  "q1c",  "q1d",
+           "q2a",  "q2b",  "q2c",  "q2d",
+           "q3a",  "q3b",  "q3c",
+           "q4a",  "q4b",  "q4c",
+           "q5a",  "q5b",  "q5c",
+           "q6a",  "q6b",  "q6c",  "q6d",  "q6e",  "q6f",
+           "q7a",  "q7b",  "q7c",
+           "q8a",  "q8b",  "q8c",  "q8d",
+           "q9a",  "q9b",  "q9c",  "q9d",
+           "q10a", "q10b", "q10c",
+           "q11a", "q11b", "q11c", "q11d",
+           "q12a", "q12b", "q12c",
+           "q13a", "q13b", "q13c", "q13d",
+           "q14a", "q14b", "q14c",
+           "q15a", "q15b", "q15c", "q15d",
+           "q16a", "q16b", "q16c", "q16d",
+           "q17a", "q17b", "q17c", "q17d", "q17e", "q17f",
+           "q18a", "q18b", "q18c",
+           "q19a", "q19b", "q19c", "q19d",
+           "q20a", "q20b", "q20c",
+           "q21a", "q21b", "q21c",
+           "q22a", "q22b", "q22c", "q22d",
+           "q23a", "q23b", "q23c",
+           "q24a", "q24b",
+           "q25a", "q25b", "q25c",
+           "q26a", "q26b", "q26c",
+           "q27a", "q27b", "q27c",
+           "q28a", "q28b", "q28c",
+           "q29a", "q29b", "q29c",
+           "q30a", "q30b", "q30c",
+           "q31a", "q31b", "q31c",
+           "q32a", "q32b",
+           "q33a", "q33b", "q33c",
+    ]
+    post_join_queries = [
+            "q3c_pj",
+            "q4a_pj",
+            "q9c_pj",
+            "q11c_pj",
+            "q16b_pj",
+            "q18c_pj",
+            "q22c_pj",
+            "q25b_pj",
+            "q28c_pj",
+            "q33c_pj",
+    ]
+
+    if config['workload'] == "job":
+        if "imdb" in config['queries']: # execute all imdb queries
+            assert len(config['queries']) == 1, "list of queries may only contain 'imdb' or actual queries"
+            config['queries'] = job_queries
+        else:
+            assert set(config["queries"]).issubset(job_queries), print(config["queries"])
+    elif config['workload'] == "post-join":
+        config['queries'] = post_join_queries
+    else:
+        print("'--workload' has to be either 'job' or 'post-join'")
+        exit(1)
 
     if __debug__: print('Configuration:', config)
 
