@@ -1,15 +1,7 @@
-#include "mutable/IR/QueryGraph.hpp"
-#include "mutable/catalog/Schema.hpp"
-#include "mutable/util/macro.hpp"
-#include <functional>
-#include <memory>
 #include <mutable/IR/Operator.hpp>
 
 #include <mutable/catalog/Catalog.hpp>
-#include <queue>
-#include <unordered_set>
-#include <utility>
-#include <wasm-binary.h>
+#include <mutable/IR/QueryGraph.hpp>
 
 
 using namespace m;
