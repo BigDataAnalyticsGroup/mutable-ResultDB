@@ -8,6 +8,7 @@
 #include <algorithm>
 #include <iterator>
 #include <mutable/catalog/Catalog.hpp>
+#include <mutable/Options.hpp>
 #include <mutable/parse/AST.hpp>
 #include <mutable/util/fn.hpp>
 #include <numeric>
