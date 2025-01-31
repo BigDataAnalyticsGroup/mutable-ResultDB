@@ -235,3 +235,4 @@ if __name__ == '__main__':
 
     for query in config['queries']:
         compute_result_set_size(query, config)
+        print(f'Finished {query}.')

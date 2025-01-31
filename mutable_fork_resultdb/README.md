@@ -36,8 +36,9 @@ You can either build `mutable` manually or use the provided Docker compose file 
     ```console
     $ pipenv run python ./benchmark/get_data.py job
     ```
-* Set up the PostgreSQL database. The following command must be executed within the Docker container.
+* Set up the PostgreSQL database. The following command must be executed within the Docker container. You may need to make the file executable.
     ```console
+    $ chmod +x ./benchmark/result-db/data/imdb/setup_postgres.sh
     $ ./benchmark/result-db/data/imdb/setup_postgres.sh postgres
     ```
 * **Note:** The PostgreSQL username inside the Docker container is `postgres`.
